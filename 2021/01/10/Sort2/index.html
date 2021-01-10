@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="我的第一个博客hello，大家好，我是张彦书">
+<meta name="description" content="交换排序1.冒泡排序 思路：将一组元素从后往前，依次与前面一个元素进行比较，如果后面的元素比前面的元素小，交换两个元素的位置，再让前面一个元素与其前面的元素进行比较，直到比到有序序列的最后的一个元素为止，每比较一趟都可以得到一个元素的最终为止，比较n-1趟即可打的一组有序的元素  注意：设立一个flag标记，当flag标记不发生改变时，即代表这组元素已有序，即可跳出循环    Javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2021/01/06/hello-world/index.html">
+<meta property="og:title" content="Sort2">
+<meta property="og:url" content="http://example.com/2021/01/10/Sort2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="我的第一个博客hello，大家好，我是张彦书">
+<meta property="og:description" content="交换排序1.冒泡排序 思路：将一组元素从后往前，依次与前面一个元素进行比较，如果后面的元素比前面的元素小，交换两个元素的位置，再让前面一个元素与其前面的元素进行比较，直到比到有序序列的最后的一个元素为止，每比较一趟都可以得到一个元素的最终为止，比较n-1趟即可打的一组有序的元素  注意：设立一个flag标记，当flag标记不发生改变时，即代表这组元素已有序，即可跳出循环    Javascript">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-01-06T02:54:44.054Z">
-<meta property="article:modified_time" content="2021-01-06T05:18:39.597Z">
+<meta property="article:published_time" content="2021-01-10T11:51:53.000Z">
+<meta property="article:modified_time" content="2021-01-10T13:19:08.522Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/2021/01/06/hello-world/"/>
+  <link rel="canonical" href="http://example.com/2021/01/10/Sort2/"/>
 
 
 
 
 
-  <title> | Hexo</title>
+  <title>Sort2 | Hexo</title>
   
 
 
@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/06/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/10/Sort2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -279,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">Sort2</h1>
         
 
         <div class="post-meta">
@@ -291,8 +291,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-06T10:54:44+08:00">
-                2021-01-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-10T19:51:53+08:00">
+                2021-01-10
               </time>
             
 
@@ -329,7 +329,33 @@
       
 
       
-        <h1 id="我的第一个博客"><a href="#我的第一个博客" class="headerlink" title="我的第一个博客"></a>我的第一个博客</h1><p>hello，大家好，我是张彦书</p>
+        <h2 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h2><h3 id="1-冒泡排序"><a href="#1-冒泡排序" class="headerlink" title="1.冒泡排序"></a>1.冒泡排序</h3><ul>
+<li><p>思路：将一组元素从后往前，依次与前面一个元素进行比较，如果后面的元素比前面的元素小，交换两个元素的位置，再让前面一个元素与其前面的元素进行比较，直到比到有序序列的最后的一个元素为止，每比较一趟都可以得到一个元素的最终为止，比较n-1趟即可打的一组有序的元素</p>
+</li>
+<li><p>注意：设立一个flag标记，当flag标记不发生改变时，即代表这组元素已有序，即可跳出循环</p>
+</li>
+</ul>
+<blockquote>
+<p>Javascript代码：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const bubbleSort &#x3D; (var A[], var n) &#x3D;&gt;&#123;</span><br><span class="line">    for(let i &#x3D; 0;i&lt; n-1;i++)&#123;</span><br><span class="line">        let flag &#x3D; false;</span><br><span class="line">        for(let j &#x3D; n-1;j&gt;i;j--)&#123;</span><br><span class="line">            if(A[j]&gt;A[j-1])&#123;</span><br><span class="line">                [A[j],A[j-1]] &#x3D; [A[j-1],A[j]];</span><br><span class="line">                flag &#x3D; true;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        if(flag&#x3D;&#x3D;flase) return;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-快速排序"><a href="#2-快速排序" class="headerlink" title="2.快速排序"></a>2.快速排序</h3><ul>
+<li><p>思路：采用了分治的思想，从一组元素中随机取一个枢轴元素pivot,经过一趟排序，将这组元素分为L[1,2,3…..k-1],L[k+1,k+2…..n],其中L[1,2,3….k-1]中的所有元素都小于pivot，L[k+1,k+2…..n]，然后再分别对这两组元素进行快速排序，最后得到一组有序的元素</p>
+</li>
+<li><p>具体方法: 我们一般把第一个元素作为枢轴元素，附设两个指针，i,j,分别指向low和high,将第一个元素的值赋给pivot,指针i指向第一个元素的位置low，指针j指向最后一个元素high，j从high开始往前找比pivot小的元素，找到之后将该元素交换到i的位置，然后从i 开始找比pivot大或等于pivot的元素，将其交换到j指针所指的位置，然后又开始从j开始找比pivot小的元素，交换到i的位置，一直重复，直到i==j时完成一趟遍历</p>
+</li>
+</ul>
+<blockquote>
+<p>Javascript代码：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*划分函数*&#x2F;</span><br><span class="line">const partition &#x3D; (var A[], var low, var high) &#x3D;&gt;&#123;</span><br><span class="line">    let pivot &#x3D; A[0];</span><br><span class="line">    while(low&lt; high)&#123;</span><br><span class="line">        while(low&lt;high &amp;&amp; A[high]&gt;&#x3D;pivot) high--;</span><br><span class="line">        A[low] &#x3D; A[high];</span><br><span class="line">        while(low&lt;high &amp;&amp; A[low]&lt;&#x3D;pivot) low++;</span><br><span class="line">        A[high] &#x3D; A[low];</span><br><span class="line">    &#125;</span><br><span class="line">    A[low] &#x3D; pivot;</span><br><span class="line">    return low;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;*递归*&#x2F;</span><br><span class="line">const quickSort(var A[], var low, var high)&#123;</span><br><span class="line">    if(low&lt;high)&#123;</span><br><span class="line">        let pivots &#x3D; partition(A,low,high);</span><br><span class="line">        quickSort(A,low,pivots-1);</span><br><span class="line">        quickSort(A,pivots+1,high);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul>
+<li><p>空间复杂度：最好情况下，只需要O(logn),最坏情况O(n),平均情况下为O(logn)</p>
+</li>
+<li><p>时间复杂度：取决于枢轴的元素，当枢轴元素刚好是所有元素的之间元素时时间复杂度最小为O(nlogn),最坏情况下为O(n^2),只不过好在其平均时间复杂度与最好的复杂度差不多，而不是接近其最差复杂度，所以其性能还是很优秀的</p>
+</li>
+</ul>
 
       
     </div>
@@ -354,15 +380,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2021/01/09/Sort1/" rel="next" title="Sort1">
+                <i class="fa fa-chevron-left"></i> Sort1
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2021/01/06/myself/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -476,7 +502,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.</span> <span class="nav-text">我的第一个博客</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A4%E6%8D%A2%E6%8E%92%E5%BA%8F"><span class="nav-number">1.</span> <span class="nav-text">交换排序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F"><span class="nav-number">1.1.</span> <span class="nav-text">1.冒泡排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F"><span class="nav-number">1.2.</span> <span class="nav-text">2.快速排序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90"><span class="nav-number">1.2.1.</span> <span class="nav-text">复杂度分析</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
