@@ -259,6 +259,133 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/06/css3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/03/06/css3/" itemprop="url">css3</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-06T22:13:44+08:00">
+                2021-03-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="css3学习笔记"><a href="#css3学习笔记" class="headerlink" title="css3学习笔记:"></a>css3学习笔记:</h1><h2 id="1-清除浮动的方法（非CSS3内容）"><a href="#1-清除浮动的方法（非CSS3内容）" class="headerlink" title="1.清除浮动的方法（非CSS3内容）"></a>1.清除浮动的方法（非CSS3内容）</h2><h2 id="clear-both"><a href="#clear-both" class="headerlink" title="+ clear:both"></a>+ clear:both</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*使用方法：在需要清除浮动的元素后面加入</span><br><span class="line">同时在style里面定义clear类</span><br><span class="line">&lt;style&gt;</span><br><span class="line">.clear&#123;clear:both;&#125;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;clear&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">缺点：会多加一个div元素，而且会破坏HTML代码的语义性</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
+
+<h2 id="overflow-hidden"><a href="#overflow-hidden" class="headerlink" title="+ overflow:hidden"></a>+ overflow:hidden</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*缺点：会隐藏超出父元素的部分*&#x2F;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="after伪元素"><a href="#after伪元素" class="headerlink" title="+ ::after伪元素"></a>+ ::after伪元素</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*比较好的解决方案*&#x2F;</span><br><span class="line">用法：</span><br><span class="line">.clearfix&#123;*zoom:1&#125;&#x2F;&#x2F;用于解决IE6,IE7浮动内容</span><br><span class="line">.clearfix::after&#123;</span><br><span class="line">    clear:both;</span><br><span class="line">    content:&quot;&quot;;</span><br><span class="line">    display:block;</span><br><span class="line">    height:0;</span><br><span class="line">    visibility:hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="2-css3渐变：background-渐变方向，开始颜色，结束颜色"><a href="#2-css3渐变：background-渐变方向，开始颜色，结束颜色" class="headerlink" title="2.css3渐变：background:(渐变方向，开始颜色，结束颜色)"></a>2.css3渐变：background:(渐变方向，开始颜色，结束颜色)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">渐变方向取值：to left, to right ,to buttom, to top 等</span><br><span class="line">例：</span><br><span class="line">#box</span><br><span class="line">&#123;</span><br><span class="line">    width:200px;</span><br><span class="line">    height:100px;</span><br><span class="line">    background:linear-gradient(to right,yellow, red);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="3-css变形：transform-变形方式"><a href="#3-css变形：transform-变形方式" class="headerlink" title="3.css变形：transform: 变形方式"></a>3.css变形：transform: 变形方式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">变形方式取值：translate(平移)，scale(缩放)</span><br><span class="line">，skew(倾斜)，rotate(旋转)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="4-css过渡：transition-过渡"><a href="#4-css过渡：transition-过渡" class="headerlink" title="4. css过渡：transition:过渡"></a>4. css过渡：transition:过渡</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">用法：transition: 过渡属性 过渡时间 过渡方式 延迟时间;</span><br><span class="line">例：</span><br><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">    display:flex;</span><br><span class="line">    width:200px;</span><br><span class="line">    height:200px;</span><br><span class="line">    border-radius:50%;</span><br><span class="line">    transition: all 0.5s;</span><br><span class="line">&#125;</span><br><span class="line">div:hover</span><br><span class="line">&#123;</span><br><span class="line">    width:400px;</span><br><span class="line">    height:400px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="5-css动画：animation"><a href="#5-css动画：animation" class="headerlink" title="5.css动画：animation"></a>5.css动画：animation</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">animation(动画名称，持续时间，动画方式，延迟时间，动画次数，动画方向)</span><br><span class="line">注：一般只使用前面两个属性和动画次数</span><br><span class="line">animation使用一般有两步：</span><br><span class="line">1.定义@keyframes动画</span><br><span class="line">2.在animation中调用你定义的@keyframes动画</span><br><span class="line">例：</span><br><span class="line"></span><br><span class="line">@keyframes ballmov</span><br><span class="line">&#123;</span><br><span class="line">    0%&#123;&#125;</span><br><span class="line">    50%&#123;transform:translateX(300px);&#125;</span><br><span class="line">    100%&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">#box</span><br><span class="line">&#123;</span><br><span class="line">    display:inline-block;</span><br><span class="line">    width:420px;</span><br><span class="line">    height:102px;</span><br><span class="line">    border:1px solid black;</span><br><span class="line">&#125;</span><br><span class="line">#ball</span><br><span class="line">&#123;</span><br><span class="line">    width:100px;</span><br><span class="line">    height:100px;</span><br><span class="line">    border-radius:50%;</span><br><span class="line">    background-color:yellow;</span><br><span class="line">    animation:ballmov 5s linear infinite;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="6-弹性盒子："><a href="#6-弹性盒子：" class="headerlink" title="6.弹性盒子："></a>6.弹性盒子：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">弹性盒子属性：</span><br><span class="line">flex-grow:子元素放大的比例</span><br><span class="line">flex-shrink:子元素的缩小比例</span><br><span class="line">flex-basis:子元素的宽度（和width效果一样，优先级大于width)</span><br><span class="line">flex:flex-grow flex-shrink flex-basis(是一个复合属性)</span><br><span class="line">flex-direction:子元素的排列方向</span><br><span class="line">flex-wrap:子元素是单行显示还是多行显示</span><br><span class="line">flex-flow:flex-direction和flex-wrap的复合属性</span><br><span class="line">order:子元素的排列顺序，值小的排在前面</span><br><span class="line">justify-content:子元素在横轴上的排列方式</span><br><span class="line">align-items:子元素在纵轴上的排列方式</span><br><span class="line">例:</span><br><span class="line">让div的子元素居中：</span><br><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">    display:flex;</span><br><span class="line">    justify-content:center;</span><br><span class="line">    align-items:center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/06/jquery1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1472,7 +1599,7 @@
               
                 <a href="/archives/%7C%7Carchive">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
