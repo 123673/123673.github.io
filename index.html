@@ -259,6 +259,136 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/09/node1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/03/09/node1/" itemprop="url">node1</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-09T12:49:24+08:00">
+                2021-03-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Node基础："><a href="#Node基础：" class="headerlink" title="Node基础："></a>Node基础：</h1><h2 id="1-Node是什么？"><a href="#1-Node是什么？" class="headerlink" title="1.Node是什么？"></a>1.Node是什么？</h2><ul>
+<li>Node是一个基于chrome v8引擎的javascript运行环境</li>
+<li>Node的组成：ECMAScript,Node模块API</li>
+<li>所有的ECMAScript语法在Node环境中都可以使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">node的使用：</span><br><span class="line">例：</span><br><span class="line">&#x2F;&#x2F;在node目录下创建 helloworld.js文件：</span><br><span class="line">&#x2F;&#x2F;在创建的文件中输入：</span><br><span class="line">var first &#x3D; &quot;hello node&quot;;</span><br><span class="line">console.log(first);</span><br><span class="line">for(var i&#x3D;0;i&lt;4;i++)&#123;</span><br><span class="line">    console.log(i);</span><br><span class="line">&#125;</span><br><span class="line">function fn()&#123;</span><br><span class="line">    console.log(&quot;fn函数被调用&quot;);</span><br><span class="line">&#125;</span><br><span class="line">fn();</span><br><span class="line">&#x2F;&#x2F;然后用命令行打开node文件目录，使用node helloworld.js运行js文件,即可得到运行结果</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="2-Node的模块开发："><a href="#2-Node的模块开发：" class="headerlink" title="2.Node的模块开发："></a>2.Node的模块开发：</h2></li>
+<li>模块化开发：一个功能就是一个模块，多个模块可以组成完整的应用，抽离一个模块不会影响其他功能的运行</li>
+<li>node模块分为两种：系统模块，第三方模块</li>
+<li>node规定：一个js文件就是一个模块，模块内定义的函数和变量，其他外部文件不可调用，但是模块内部可以使用exports对象进行成员导出，使用require导入其他模块<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">例</span><br><span class="line">&#x2F;&#x2F;a.js文件</span><br><span class="line">function add(a,b)&#123;</span><br><span class="line">    return a+b;</span><br><span class="line">&#125;</span><br><span class="line">exports.add &#x3D; add;&#x2F;&#x2F;导出add函数</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;b.js文件</span><br><span class="line"></span><br><span class="line">require(&#39;a.js&#39;);&#x2F;&#x2F;返回的是exports的对象即add函数</span><br><span class="line">const a &#x3D; require(&#39;a.js&#39;);</span><br><span class="line">console(a(1,2)); &#x2F;&#x2F;调用add函数</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="2-1系统模块：即node环境提供的api"><a href="#2-1系统模块：即node环境提供的api" class="headerlink" title="2.1系统模块：即node环境提供的api"></a>2.1系统模块：即node环境提供的api</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">1.文件模块fs:</span><br><span class="line">导入方法： const fs &#x3D; require(&#39;fs&#39;);</span><br><span class="line">fs模块的方法有：读取文件： fs.readFile(),写文件：fs.writeFile()</span><br><span class="line">读取文件的语法：fs.readFile(&#39;文件地址&#x2F;文件名称&#39;, callback回调函数)</span><br><span class="line"></span><br><span class="line">例：</span><br><span class="line">fs.readFile(&#39;&#x2F;user&#x2F;ex.txt&#39;,(err, doc) &#x3D;&gt;&#123;</span><br><span class="line">    &#x2F;&#x2F;如果读取文件失败，err返回错误信息，如果读取成功，doc为文件内容,err为null</span><br><span class="line">    if(err&#x3D;&#x3D;null)&#123;</span><br><span class="line">        console.log(doc);</span><br><span class="line">    &#125;</span><br><span class="line">&#125; )</span><br><span class="line"></span><br><span class="line">写入文件的语法：fs.writeFile(&#39;文件地址&#x2F;文件名称&#39;，&#39;写入内容&#39;，回调函数callback)</span><br><span class="line">例：</span><br><span class="line">fs.writeFile(&#39;demo&#x2F;1.txt&#39;,&#39;即将写入的内容&#39;,err &#x3D;&gt;&#123;</span><br><span class="line">    if(err!&#x3D;null)&#123;</span><br><span class="line">        console.log(&#39;文件写入失败&#39;);</span><br><span class="line">        return;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    console.log(&#39;文件写入成功&#39;);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">2.路径模块path:常用于路径拼接</span><br><span class="line">path.join(&#39;1&#39;,&#39;2&#39;,&#39;3&#39;);&#x2F;&#x2F;将1，2,3拼接为一个适合于所有操作系统的文件路径</span><br><span class="line"></span><br><span class="line">获取绝对路径的方法：__dirname:获取当前文件目录的绝对路径</span><br></pre></td></tr></table></figure>
+<h3 id="2-2：第三方模块：别人写好的，具有特点功能的，我们可以直接拿过来使用的模块即为第三方模块-由于第三方模块一般都由多个文件组成放在一个文件夹中，因此第三方模块又叫包"><a href="#2-2：第三方模块：别人写好的，具有特点功能的，我们可以直接拿过来使用的模块即为第三方模块-由于第三方模块一般都由多个文件组成放在一个文件夹中，因此第三方模块又叫包" class="headerlink" title="2.2：第三方模块：别人写好的，具有特点功能的，我们可以直接拿过来使用的模块即为第三方模块,由于第三方模块一般都由多个文件组成放在一个文件夹中，因此第三方模块又叫包"></a>2.2：第三方模块：别人写好的，具有特点功能的，我们可以直接拿过来使用的模块即为第三方模块,由于第三方模块一般都由多个文件组成放在一个文件夹中，因此第三方模块又叫包</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">第三方模块有两种形式:1.以包的形式，提供实现项目的具体功能api   2.以命令行根据形式存在，辅助项目开发</span><br><span class="line">获取第三方模块：</span><br><span class="line">npm:node package manager :node 的第三方模块管理工具</span><br><span class="line">使用第三方模块步骤：</span><br><span class="line">1.下载第三方模块： npm install 第三方模块名称  注：具体模块的下载方式可取官网查，有具体的步骤</span><br><span class="line">2.在需要的模块内导入第三方模块：require(&#39;模块名称&#39;);</span><br><span class="line">3.使用</span><br><span class="line">命令行工具：全局安装</span><br><span class="line">库文件：本地安装</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">注：实用的第三方模块：</span><br><span class="line">1.nodemon :检测node文件的保存操作，一旦保存，便自动运行node文件</span><br><span class="line">npm install nodemon -g</span><br><span class="line">使用方法： 用nodemon 代替node执行文件</span><br><span class="line"></span><br><span class="line">2.nrm :切换npm下载地址：将下载地址转换到国内服务器，提高下载速度</span><br><span class="line"></span><br><span class="line">nmp install nrm -g</span><br><span class="line"></span><br><span class="line">nrm use taobao &#x2F;&#x2F;切换下载地址到淘宝服务器</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/06/css3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1433,129 +1563,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/06/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/01/06/hello-world/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-06T10:54:44+08:00">
-                2021-01-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="我的第一个博客"><a href="#我的第一个博客" class="headerlink" title="我的第一个博客"></a>我的第一个博客</h1><p>hello，大家好，我是张彦书</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
+  </nav>
+
 
 
           </div>
@@ -1599,7 +1613,7 @@
               
                 <a href="/archives/%7C%7Carchive">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
