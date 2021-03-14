@@ -1,74 +1,43 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+
+    
+    
+        
+<link rel="stylesheet" href="/css/mdui.min.v1.0.0.css">
+
+    
+    
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
 
 
+    
+    
 
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
 
 
 
@@ -79,1942 +48,717 @@
 
 
 
-<meta name="description" content="张彦书的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="张彦书的blog">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="张彦书的blog">
-<meta property="og:description" content="张彦书的博客">
-<meta property="og:locale">
-<meta property="article:author" content="zys">
-<meta name="twitter:card" content="summary">
 
 
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '',
-    scheme: 'Mist',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
+    
+        <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        
+            load: ['[tex]/mhchem'],
+        
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        
+            packages: {'[+]': ['mhchem']},
+        
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
 </script>
+          
 
 
-
-  <link rel="canonical" href="http://example.com/"/>
-
-
-
-
-
-  <title>张彦书的blog</title>
-  
-
-
-
-
-
-
-
-
+    
+    
+    <title>
+          
+            张彦书的blog
+        
+    </title>
+    
+    
 <meta name="generator" content="Hexo 5.3.0"></head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
   
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">张彦书的blog</a>
+    <a href="/" class="header-subtitle mdui-typo-headline"></a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
   
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">张彦书的blog</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
     </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
 </div>
 
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/12/es5-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="张彦书的blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/03/12/es5-1/" itemprop="url">es5.1</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-12T22:45:14+08:00">
-                2021-03-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/es5/" itemprop="url" rel="index">
-                    <span itemprop="name">es5</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Es5知识点摘要-附代码，较详细-："><a href="#Es5知识点摘要-附代码，较详细-：" class="headerlink" title="Es5知识点摘要(附代码，较详细)："></a>Es5知识点摘要(附代码，较详细)：</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br></pre></td><td class="code"><pre><span class="line">GET与POST的区别：</span><br><span class="line">1.传送参数的方式：get是通过URL传送参数，post是通过请求报文传送，将参数放在请求体中</span><br><span class="line">2.传输数据大小：get传输数据限制受到浏览器的限制，一般最多传输2Kb，而post可以传输的数据更多</span><br><span class="line"></span><br><span class="line">函数也属于对象</span><br><span class="line">万物皆对象</span><br><span class="line">intanceof：用来判断数据的类型</span><br><span class="line"></span><br><span class="line">函数的this指向：</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1.call:调用函数的同时，改变this指向：主要用来实现继承</span><br><span class="line">&#x2F;&#x2F;实现子函数继承父函数的属性值</span><br><span class="line"></span><br><span class="line">function Father(uname,age)&#123;</span><br><span class="line">       this.uname &#x3D; uname;</span><br><span class="line">       this.age &#x3D; age;</span><br><span class="line">       </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;子函数使用call()函数将父函数的属性继承</span><br><span class="line">function Son(uname,age)&#123;</span><br><span class="line">       Father.call(this,uname,age);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">2.apply方法：和call的功能一样，但是参数不一样：</span><br><span class="line">主要应用：利用apply对数组调用数学内置函数</span><br><span class="line">apply(指向的对象，数组);</span><br><span class="line"></span><br><span class="line">var max &#x3D; Math.max.apply(Math,arr) &#x2F;&#x2F;求数组的最大值</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">3.bind 方法:</span><br><span class="line">1.不会调用函数</span><br><span class="line">2.可以改变内部的this 指向</span><br><span class="line">3.返回改变this之后的新函数</span><br><span class="line">bind(obj,参数)</span><br><span class="line">用的最多：</span><br><span class="line">例：改变定时器内部的this指向</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">        window.onload &#x3D; function()&#123;</span><br><span class="line">            var btns &#x3D; document.querySelectorAll(&#39;button&#39;);</span><br><span class="line">            for(var i&#x3D;0; i&lt;btns.length;i++)&#123;</span><br><span class="line">            btns[i].onclick &#x3D; function()&#123;</span><br><span class="line">                this.disabled &#x3D; true;</span><br><span class="line">                setTimeout(function()&#123;this.disabled&#x3D;false;&#125;.bind(this),2000);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;button &gt;点击&lt;&#x2F;button&gt;</span><br><span class="line">    &lt;button &gt;点击&lt;&#x2F;button&gt;</span><br><span class="line">    &lt;button &gt;点击&lt;&#x2F;button&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">严格模式：</span><br><span class="line">IE10以后的版本才有：</span><br><span class="line"> </span><br><span class="line">1.为所有的代码开启严格模式</span><br><span class="line">在是所有语句之前添加</span><br><span class="line">&#39;use strict&#39;;</span><br><span class="line">2.为指定的函数开启严格模式</span><br><span class="line">在指定的函数内部开头添加&#39;use strict&#39;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">严格模式的变化：</span><br><span class="line">1，必须先声明才能使用</span><br><span class="line">2.严禁删除已有的变量</span><br><span class="line">3，严格模式下的this指向：</span><br><span class="line">  1.全局作用域中的含糊的this指向的是undefined</span><br><span class="line">  2.以前构造函数时不加new也可以调用，当普通函数使用，this指向</span><br><span class="line">全局对象</span><br><span class="line">  3， 全局模式下，如果不加new调用构造函数会报错</span><br><span class="line">  4， 定时器的this还是指向window</span><br><span class="line">  5.事件，对象还是指向调用者</span><br><span class="line"></span><br><span class="line">高阶函数：满足一下任何一个条件：</span><br><span class="line">1.将函数作为参数的函数</span><br><span class="line">2.将函数作为返回值的函数</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">闭包(closure)：一个函数可以访问另一个函数内的局部变量，这个被访问变量</span><br><span class="line">的函数就是闭包</span><br><span class="line">作用，扩大了变量的作用范围，其他作用域也可以访问函数内部的局部变量</span><br><span class="line">1.内部函数访问局部作用域的变量：</span><br><span class="line">        function fn()&#123;</span><br><span class="line">            var num &#x3D; 1;</span><br><span class="line">            function f()&#123;</span><br><span class="line">                console.log(num);</span><br><span class="line">            &#125;</span><br><span class="line">            f();</span><br><span class="line">        &#125;</span><br><span class="line">        fn();</span><br><span class="line"></span><br><span class="line">2.全局作用域函数访问局部变量:</span><br><span class="line">        function fn()&#123;</span><br><span class="line">            var num &#x3D; 1;</span><br><span class="line">            return function()&#123;</span><br><span class="line">                console.log(num);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        var f &#x3D; fn();</span><br><span class="line">        f();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">利用闭包得到当前点击的小Li</span><br><span class="line">var lis &#x3D; document.querySelector(&#39;.nav&#39;).querySelectorAll(&#39;li&#39;);</span><br><span class="line">           lis.forEach((value,i) &#x3D;&gt; &#123;</span><br><span class="line">               (function(i)&#123;</span><br><span class="line">                    lis[i].onclick &#x3D; function()&#123;</span><br><span class="line">                        console.log(i);</span><br><span class="line">                    &#125;</span><br><span class="line">               &#125;)(i)</span><br><span class="line">           &#125;)</span><br><span class="line"></span><br><span class="line">立即执行函数称为小闭包：因为立即执行函数里面的任何一个函数</span><br><span class="line">都可以调用它传入的i 变量</span><br><span class="line">但是会造成内存泄漏</span><br><span class="line"></span><br><span class="line">也可以利用闭包3秒之后打印所有的li元素（思路和上面一样）</span><br><span class="line">计算打车的价格：</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">递归：</span><br><span class="line">如果一个函数在内部可以调用其本身，这个函数就称为递归函数</span><br><span class="line">为了防止栈溢出，递归函数必须要加退出条件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">利用递归求数学题：</span><br><span class="line"></span><br><span class="line">  function fn(n)&#123;</span><br><span class="line">         if(n&#x3D;&#x3D;1)&#123;</span><br><span class="line">             return 1;</span><br><span class="line">         &#125;</span><br><span class="line">         return n*fn(n-1);</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">斐波那契数列的递归实现：</span><br><span class="line"></span><br><span class="line"> function fab(n)&#123;</span><br><span class="line">          if(n&#x3D;&#x3D;1||n&#x3D;&#x3D;2)&#123;</span><br><span class="line">              return 1;</span><br><span class="line">          &#125;</span><br><span class="line">          return fab(n-1)+fab(n-2);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">深拷贝，浅拷贝</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">浅拷贝只拷贝一层：更深层次的对象级别只拷贝地址</span><br><span class="line">深拷贝拷贝多层，每一级别的数据都会拷贝</span><br><span class="line"></span><br><span class="line">javascript原型实现：</span><br><span class="line">&#x2F;&#x2F;浅拷贝：</span><br><span class="line">1.for循环</span><br><span class="line">var a &#x3D; &#123;</span><br><span class="line">          name: &#39;手机&#39;,</span><br><span class="line">          num:20,</span><br><span class="line">          type:&#123;</span><br><span class="line">              log: &#39;小米&#39;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;;</span><br><span class="line">      var b &#x3D; &#123;&#125;;</span><br><span class="line">      for(k in a)&#123;</span><br><span class="line">          b[k] &#x3D; a[k];</span><br><span class="line">      &#125;</span><br><span class="line">2.语法糖：Object.assign(目标对象,被拷贝对象)</span><br><span class="line">    var a &#x3D; &#123;</span><br><span class="line">          name: &#39;手机&#39;,</span><br><span class="line">          num:20,</span><br><span class="line">          type:&#123;</span><br><span class="line">              log: &#39;小米&#39;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;;</span><br><span class="line">      var b &#x3D; &#123;&#125;;</span><br><span class="line">      Object.assign(b,a);</span><br><span class="line"></span><br><span class="line">深拷贝：</span><br><span class="line">1.递归实现</span><br><span class="line">     var a &#x3D; &#123;</span><br><span class="line">          name: &#39;手机&#39;,</span><br><span class="line">          num:20,</span><br><span class="line">          type:&#123;</span><br><span class="line">              log: &#39;小米&#39;</span><br><span class="line">          &#125;,</span><br><span class="line">          ex:[&#39;华为&#39;]</span><br><span class="line">      &#125;;</span><br><span class="line">      var b &#x3D; &#123;&#125;;</span><br><span class="line">      function deepcopy(newobj,oldobj)&#123;</span><br><span class="line">             for(k in oldobj)&#123;</span><br><span class="line">                 var item &#x3D; oldobj[k];</span><br><span class="line">                 if(item instanceof Array)&#123;</span><br><span class="line">                     newobj[k] &#x3D; [];</span><br><span class="line">                     deepcopy(newobj[k],item);</span><br><span class="line">                 &#125;else if(item instanceof Object)&#123;</span><br><span class="line">                    newobj[k] &#x3D; &#123;&#125;;</span><br><span class="line">                    deepcopy(newobj[k],item);</span><br><span class="line">                 &#125;else&#123;</span><br><span class="line">                     newobj[k] &#x3D; item;</span><br><span class="line">                 &#125;</span><br><span class="line">             &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      deepcopy(b,a);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">java中 instanceof 运算符的用法</span><br><span class="line">instanceof表示的是实例化，也就是说是否为某个类型。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-          
-        
-      
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">Overview</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">About</a>
     </div>
-    
-    
-    
 
     
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/11/es5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="张彦书的blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+    <div id="sidebar-tab1" class="mdui-p-a-1">
+        <div class="mdui-list">
+            
                 
-                <a class="post-title-link" href="/2021/03/11/es5/" itemprop="url">es5</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-11T17:02:57+08:00">
-                2021-03-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/es5/" itemprop="url" rel="index">
-                    <span itemprop="name">es5</span>
-                  </a>
-                </span>
-
                 
-                
-              
-            </span>
-          
-
-          
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">分类</div>
+                </a>
             
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">Night Mode</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
         </div>
-      </header>
-    
+    </div>
 
     
+    <div id="sidebar-tab2" class="mdui-p-a-1">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/image/avater.JPG"/>
+                
+            </div>
+            <div class="sidebar-author-name">zys</div>
+            <div class="sidebar-description">张彦书的博客</div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a target="_blank" rel="noopener" href="https://mail.163.com/" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a target="_blank" rel="noopener" href="https://github.com/123673" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-steam"></i></span>
+                    <a target="_blank" rel="noopener" href="https://store.steampowered.com/" class="mdui-chip-title">Steam</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-weibo"></i></span>
+                    <a target="_blank" rel="noopener" href="https://weibo.com/" class="mdui-chip-title">Weibo</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Links</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mdui-divider"></div>
     
     
-    <div class="post-body" itemprop="articleBody">
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    
+    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
+      
+      
+        <div class="post-header"> 
+  <a class="post-header-title" href="/2021/03/12/es5-1/">es5.1</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-03-12
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-03-14
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/es5/">es5</a>
+    </span>
+    
+  </div>
+</div>   
+    
+
+
 
       
       
+  <div class="tag-line-space"></div>
 
       
+      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
+        <div class="post-abstract mdui-typo ">
+          
+            <h1 id="Es5知识点摘要-附代码，较详细-："><a href="#Es5知识点摘要-附代码，较详细-：" class="headerlink" title="Es5知识点摘要(附代码，较详细)："></a>Es5知识点摘要(附代码，较详细)：</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br></pre></td><td class="code"><pre><span class="line">GET与POST的区别：</span><br><span class="line">1.传送参数的方式：get是通过URL传送参数，post是通过请求报文传送，将参数放在请求体中</span><br><span class="line">2.传输数据大小：get传输数据限制受到浏览器的限制，一般最多传输2Kb，而post可以传输的数据更多</span><br><span class="line"></span><br><span class="line">函数也属于对象</span><br><span class="line">万物皆对象</span><br><span class="line">intanceof：用来判断数据的类型</span><br><span class="line"></span><br><span class="line">函数的this指向：</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1.call:调用函数的同时，改变this指向：主要用来实现继承</span><br><span class="line">&#x2F;&#x2F;实现子函数继承父函数的属性值</span><br><span class="line"></span><br><span class="line">function Father(uname,age)&#123;</span><br><span class="line">       this.uname &#x3D; uname;</span><br><span class="line">       this.age &#x3D; age;</span><br><span class="line">       </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;子函数使用call()函数将父函数的属性继承</span><br><span class="line">function Son(uname,age)&#123;</span><br><span class="line">       Father.call(this,uname,age);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">2.apply方法：和call的功能一样，但是参数不一样：</span><br><span class="line">主要应用：利用apply对数组调用数学内置函数</span><br><span class="line">apply(指向的对象，数组);</span><br><span class="line"></span><br><span class="line">var max &#x3D; Math.max.apply(Math,arr) &#x2F;&#x2F;求数组的最大值</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">3.bind 方法:</span><br><span class="line">1.不会调用函数</span><br><span class="line">2.可以改变内部的this 指向</span><br><span class="line">3.返回改变this之后的新函数</span><br><span class="line">bind(obj,参数)</span><br><span class="line">用的最多：</span><br><span class="line">例：改变定时器内部的this指向,因为setTimeout内部的this指向的是window</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">        window.onload &#x3D; function()&#123;</span><br><span class="line">            var btns &#x3D; document.querySelectorAll(&#39;button&#39;);</span><br><span class="line">            for(var i&#x3D;0; i&lt;btns.length;i++)&#123;</span><br><span class="line">            btns[i].onclick &#x3D; function()&#123;</span><br><span class="line">                this.disabled &#x3D; true;</span><br><span class="line">                setTimeout(function()&#123;this.disabled&#x3D;false;&#125;.bind(this),2000);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;button &gt;点击&lt;&#x2F;button&gt;</span><br><span class="line">    &lt;button &gt;点击&lt;&#x2F;button&gt;</span><br><span class="line">    &lt;button &gt;点击&lt;&#x2F;button&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">严格模式：</span><br><span class="line">IE10以后的版本才有：</span><br><span class="line"> </span><br><span class="line">1.为所有的代码开启严格模式</span><br><span class="line">在是所有语句之前添加</span><br><span class="line">&#39;use strict&#39;;</span><br><span class="line">2.为指定的函数开启严格模式</span><br><span class="line">在指定的函数内部开头添加&#39;use strict&#39;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">严格模式的变化：</span><br><span class="line">1，必须先声明才能使用</span><br><span class="line">2.严禁删除已有的变量</span><br><span class="line">3，严格模式下的this指向：</span><br><span class="line">  1.全局作用域中的含糊的this指向的是undefined</span><br><span class="line">  2.以前构造函数时不加new也可以调用，当普通函数使用，this指向</span><br><span class="line">全局对象</span><br><span class="line">  3， 全局模式下，如果不加new调用构造函数会报错</span><br><span class="line">  4， 定时器的this还是指向window</span><br><span class="line">  5.事件，对象还是指向调用者</span><br><span class="line"></span><br><span class="line">高阶函数：满足一下任何一个条件：</span><br><span class="line">1.将函数作为参数的函数</span><br><span class="line">2.将函数作为返回值的函数</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">闭包(closure)：一个函数可以访问另一个函数内的局部变量，这个被访问变量</span><br><span class="line">的函数就是闭包</span><br><span class="line">作用，扩大了变量的作用范围，其他作用域也可以访问函数内部的局部变量</span><br><span class="line">1.内部函数访问局部作用域的变量：</span><br><span class="line">        function fn()&#123;</span><br><span class="line">            var num &#x3D; 1;</span><br><span class="line">            function f()&#123;</span><br><span class="line">                console.log(num);</span><br><span class="line">            &#125;</span><br><span class="line">            f();</span><br><span class="line">        &#125;</span><br><span class="line">        fn();</span><br><span class="line"></span><br><span class="line">2.全局作用域函数访问局部变量:</span><br><span class="line">        function fn()&#123;</span><br><span class="line">            var num &#x3D; 1;</span><br><span class="line">            return function()&#123;</span><br><span class="line">                console.log(num);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        var f &#x3D; fn();</span><br><span class="line">        f();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">利用闭包得到当前点击的小Li</span><br><span class="line">var lis &#x3D; document.querySelector(&#39;.nav&#39;).querySelectorAll(&#39;li&#39;);</span><br><span class="line">           lis.forEach((value,i) &#x3D;&gt; &#123;</span><br><span class="line">               (function(i)&#123;</span><br><span class="line">                    lis[i].onclick &#x3D; function()&#123;</span><br><span class="line">                        console.log(i);</span><br><span class="line">                    &#125;</span><br><span class="line">               &#125;)(i)</span><br><span class="line">           &#125;)</span><br><span class="line"></span><br><span class="line">立即执行函数称为小闭包：因为立即执行函数里面的任何一个函数</span><br><span class="line">都可以调用它传入的i 变量</span><br><span class="line">但是会造成内存泄漏</span><br><span class="line"></span><br><span class="line">也可以利用闭包3秒之后打印所有的li元素（思路和上面一样）</span><br><span class="line">计算打车的价格：</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">递归：</span><br><span class="line">如果一个函数在内部可以调用其本身，这个函数就称为递归函数</span><br><span class="line">为了防止栈溢出，递归函数必须要加退出条件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">利用递归求数学题：</span><br><span class="line"></span><br><span class="line">  function fn(n)&#123;</span><br><span class="line">         if(n&#x3D;&#x3D;1)&#123;</span><br><span class="line">             return 1;</span><br><span class="line">         &#125;</span><br><span class="line">         return n*fn(n-1);</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">斐波那契数列的递归实现：</span><br><span class="line"></span><br><span class="line"> function fab(n)&#123;</span><br><span class="line">          if(n&#x3D;&#x3D;1||n&#x3D;&#x3D;2)&#123;</span><br><span class="line">              return 1;</span><br><span class="line">          &#125;</span><br><span class="line">          return fab(n-1)+fab(n-2);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">深拷贝，浅拷贝</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">浅拷贝只拷贝一层：更深层次的对象级别只拷贝地址</span><br><span class="line">深拷贝拷贝多层，每一级别的数据都会拷贝</span><br><span class="line"></span><br><span class="line">javascript原型实现：</span><br><span class="line">&#x2F;&#x2F;浅拷贝：</span><br><span class="line">1.for循环</span><br><span class="line">var a &#x3D; &#123;</span><br><span class="line">          name: &#39;手机&#39;,</span><br><span class="line">          num:20,</span><br><span class="line">          type:&#123;</span><br><span class="line">              log: &#39;小米&#39;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;;</span><br><span class="line">      var b &#x3D; &#123;&#125;;</span><br><span class="line">      for(k in a)&#123;</span><br><span class="line">          b[k] &#x3D; a[k];</span><br><span class="line">      &#125;</span><br><span class="line">2.语法糖：Object.assign(目标对象,被拷贝对象)</span><br><span class="line">    var a &#x3D; &#123;</span><br><span class="line">          name: &#39;手机&#39;,</span><br><span class="line">          num:20,</span><br><span class="line">          type:&#123;</span><br><span class="line">              log: &#39;小米&#39;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;;</span><br><span class="line">      var b &#x3D; &#123;&#125;;</span><br><span class="line">      Object.assign(b,a);</span><br><span class="line"></span><br><span class="line">深拷贝：</span><br><span class="line">1.递归实现</span><br><span class="line">     var a &#x3D; &#123;</span><br><span class="line">          name: &#39;手机&#39;,</span><br><span class="line">          num:20,</span><br><span class="line">          type:&#123;</span><br><span class="line">              log: &#39;小米&#39;</span><br><span class="line">          &#125;,</span><br><span class="line">          ex:[&#39;华为&#39;]</span><br><span class="line">      &#125;;</span><br><span class="line">      var b &#x3D; &#123;&#125;;</span><br><span class="line">      function deepcopy(newobj,oldobj)&#123;</span><br><span class="line">             for(k in oldobj)&#123;</span><br><span class="line">                 var item &#x3D; oldobj[k];</span><br><span class="line">                 if(item instanceof Array)&#123;</span><br><span class="line">                     newobj[k] &#x3D; [];</span><br><span class="line">                     deepcopy(newobj[k],item);</span><br><span class="line">                 &#125;else if(item instanceof Object)&#123;</span><br><span class="line">                    newobj[k] &#x3D; &#123;&#125;;</span><br><span class="line">                    deepcopy(newobj[k],item);</span><br><span class="line">                 &#125;else&#123;</span><br><span class="line">                     newobj[k] &#x3D; item;</span><br><span class="line">                 &#125;</span><br><span class="line">             &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      deepcopy(b,a);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">java中 instanceof 运算符的用法</span><br><span class="line">instanceof表示的是实例化，也就是说是否为某个类型。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+          
+        </div>
         
+        <div style="text-align:center;">
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/03/12/es5-1/">Read More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
+      
+      
+        <div class="post-header"> 
+  <a class="post-header-title" href="/2021/03/11/es5/">es5</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-03-11
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-03-14
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/es5/">es5</a>
+    </span>
+    
+  </div>
+</div>   
+    
+
+
+
+      
+      
+  <div class="tag-line-space"></div>
+
+      
+      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
+        <div class="post-abstract mdui-typo ">
           
             <h1 id="ES5知识点摘要-附代码，较详细-："><a href="#ES5知识点摘要-附代码，较详细-：" class="headerlink" title="ES5知识点摘要(附代码，较详细)："></a>ES5知识点摘要(附代码，较详细)：</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br></pre></td><td class="code"><pre><span class="line">this指向：</span><br><span class="line">1.constractor：构造函数内的this指向的是实例对象</span><br><span class="line">2.函数里面的this指向的是调用这个函数的对象</span><br><span class="line"></span><br><span class="line">es6之前：使用构造函数来创建新的对象</span><br><span class="line">创建构造函数的方法：</span><br><span class="line">function Elite(uname,age)&#123;</span><br><span class="line">            this.uname &#x3D; uname;</span><br><span class="line">            this.age &#x3D; age;</span><br><span class="line">            this.sing &#x3D; function()&#123;</span><br><span class="line">                console.log(&#39;我要学习！&#39;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; </span><br><span class="line">        var zys &#x3D; new Elite(&#39;张彦书&#39;,22);</span><br><span class="line">        zys.sing();</span><br><span class="line">        </span><br><span class="line">实例成员：通过构造函数的this创建的成员，只能通过实例对象访问，不能</span><br><span class="line">直接时使用构造函数来访问</span><br><span class="line">静态成员：直接在构造函数上面添加的，静态成员只能通过构造函数来访问，不能</span><br><span class="line">通过对象的方式来访问</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">构造函数好用，但是存在浪费内存的方法：会为每个实例对象的函数</span><br><span class="line">创建单独的空间，虽然这些函数实现的功能是一样的</span><br><span class="line">解决方法：使用原型对象，把构造函数中的方法定义到原型对象里面</span><br><span class="line">原型（原型对象）：构造函数通过原型分配的函数是所有实例对象共享的</span><br><span class="line">每个构造函数都有一个protype属性</span><br><span class="line"></span><br><span class="line">原型就是原型对象</span><br><span class="line">原型的作用是共享方法，节省内存空间</span><br><span class="line"></span><br><span class="line">例：</span><br><span class="line">Star.protype.jum &#x3D; function()&#123;</span><br><span class="line">      console.log(&#39;跳跃&#39;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">公共属性放到构造函数，公共的方法放到原型对象里面</span><br><span class="line"></span><br><span class="line">对象升上系统自动添加了一个__proto__指向构造函数的prototype</span><br><span class="line">__proto__:对象原型：</span><br><span class="line">当对象找不到sing()方法的时候，__proto__会查找prototype对象看其是否有sing()</span><br><span class="line">如果找到就调用 </span><br><span class="line"></span><br><span class="line">对象原型：__proto__和原型对象prototype都有一个属性constractor，</span><br><span class="line">我们称为构造函数，因为他指向构造函数本身</span><br><span class="line"></span><br><span class="line">constractor 主要用于记录该对象引用于那个构造函数，他可以让原型对象指向原来的构造函数</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">如果我们修改了原来的原型对象，给原型对象赋值的是一个对象，则必须手动利用</span><br><span class="line">constractor指回原来的构造函数</span><br><span class="line">   Elite.prototype &#x3D; &#123;</span><br><span class="line">         constractor:Elite,</span><br><span class="line">         sing: function()&#123;</span><br><span class="line">             console.log(&#39;我要学习！&#39;);</span><br><span class="line">         &#125;,</span><br><span class="line">         jum: function()&#123;</span><br><span class="line">              console.log(&#39;专注！&#39;);</span><br><span class="line">         &#125;         </span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">原型链：</span><br><span class="line">实例对象里面的__proto__对象指向构造函数的prototype对象，prototype对象里面的__proto__对象</span><br><span class="line">指向window.prototype对象，window.prototype指向null对象</span><br><span class="line">一般实例对象调用函数会按照原型链的方向查找函数，直到找到函数或者null为止</span><br><span class="line"></span><br><span class="line">构造函数里面的this</span><br><span class="line">一般来说，this指向调用者</span><br><span class="line"></span><br><span class="line">继承：</span><br><span class="line">es5:组合继承</span><br><span class="line">call();</span><br><span class="line">组合继承原理：</span><br><span class="line">1.使用构造函数将父函数的属性继承给子函数</span><br><span class="line">2.使用原型对象指向父类的实例对象来实现方法的继承</span><br><span class="line"></span><br><span class="line">    Son.prototype &#x3D; new Father();</span><br><span class="line">    Son.prototype.constractor &#x3D; Son;&#x2F;&#x2F;手动将Son的constractor指向构造函数</span><br><span class="line"></span><br><span class="line">es5新增方法：</span><br><span class="line">1.数组方法：forEach()  </span><br><span class="line"> var arr &#x3D; [1,2,3];</span><br><span class="line">    arr.forEach((value,index,array)&#x3D;&gt; &#123;</span><br><span class="line">        console.log(&#39;数组第&#39; + index + &#39;个值为：&#39;+value);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">2.Filter:返回符合条件的数：返回值为数组</span><br><span class="line">     var arr &#x3D; [12,132,22,45,21];</span><br><span class="line">     var a &#x3D; arr.filter((value, index) &#x3D;&gt; &#123;</span><br><span class="line">         return value%2 &#x3D;&#x3D;&#x3D; 0;</span><br><span class="line">     &#125;)</span><br><span class="line">     console.log(a);</span><br><span class="line"></span><br><span class="line">3.some：返回值为布尔值：条件满足返回true</span><br><span class="line">用法与上面的方法一样</span><br><span class="line">找到第一个满足条件的元素，就终止循环</span><br><span class="line">var arr &#x3D; [12,132,22,45,21];</span><br><span class="line">     var a &#x3D; arr.filter((value, index) &#x3D;&gt; &#123;</span><br><span class="line">         return value%2 &#x3D;&#x3D;&#x3D; 0;</span><br><span class="line">     &#125;)</span><br><span class="line">     console.log(a);</span><br><span class="line"></span><br><span class="line">4.字符串方法：trim()，从一个字符串的两端删除空白字符，然后返回一个新的字符</span><br><span class="line">str.trim()</span><br><span class="line"></span><br><span class="line">5.对象方法：</span><br><span class="line"></span><br><span class="line">Object.keys():获取对象的所有属性名</span><br><span class="line">返回一个由属性名组成的数组</span><br><span class="line"></span><br><span class="line">var obj &#x3D; &#123;</span><br><span class="line">    id:1,</span><br><span class="line">    name:&#39;sc&#39;,</span><br><span class="line">    age:120</span><br><span class="line">&#125;</span><br><span class="line">var arry &#x3D; Object.keys(obj);</span><br><span class="line">console.log(arry);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Object.defineProperty():定义对象中的新属性和修改原有属性</span><br><span class="line">语法：</span><br><span class="line">Object.defineProperty(obj,prop,descri)；</span><br><span class="line">&#x2F;&#x2F;三个参数都是必须的，不可省略</span><br><span class="line">obj :目标对象</span><br><span class="line">prop:要修改的属性</span><br><span class="line"></span><br><span class="line">descri:是一个对象</span><br><span class="line">value:属性值</span><br><span class="line">var obj &#x3D; &#123;</span><br><span class="line">        id:1,</span><br><span class="line">        name:&#39;sc&#39;,</span><br><span class="line">        age:120</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Object.defineProperty(obj,&#39;id&#39;,&#123;value:2&#125;)</span><br><span class="line">    console.log(obj);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">writeable():属性值是否可被重写值为true可重写，false为不可重写，默认值为false</span><br><span class="line">var obj &#x3D; &#123;</span><br><span class="line">        id:1,</span><br><span class="line">        name:&#39;sc&#39;,</span><br><span class="line">        age:120</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Object.defineProperty(obj,&#39;id&#39;,&#123;writeable:false&#125;)</span><br><span class="line">    console.log(obj);</span><br><span class="line">enumerable:目标属性是否可被枚举（遍历）,true可被遍历，false不能遍历，默认false</span><br><span class="line">var obj &#x3D; &#123;</span><br><span class="line">        id:1,</span><br><span class="line">        name:&#39;sc&#39;,</span><br><span class="line">        age:120</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Object.defineProperty(obj,&#39;id&#39;,&#123;enumerable:false&#125;)</span><br><span class="line">    console.log(Object.keys(obj));</span><br><span class="line">configureable:目标属性是否可被修改或 删除，true可删除修改，false则不能，修改第三参数里面的</span><br><span class="line">任何一个特性</span><br><span class="line"></span><br><span class="line">var obj &#x3D; &#123;</span><br><span class="line">        id:1,</span><br><span class="line">        name:&#39;sc&#39;,</span><br><span class="line">        age:120</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Object.defineProperty(obj,&#39;id&#39;,&#123;configureable:false&#125;);</span><br><span class="line">    delete obj.id;&#x2F;&#x2F;删除失败</span><br><span class="line">    console.log(Object.keys(obj));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
           
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/11/regexp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="张彦书的blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/03/11/regexp/" itemprop="url">regexp</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-11T15:37:30+08:00">
-                2021-03-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="url" rel="index">
-                    <span itemprop="name">正则表达式</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
         
+        <div style="text-align:center;">
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/03/11/es5/">Read More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
+      
+      
+        <div class="post-header"> 
+  <a class="post-header-title" href="/2021/03/11/regexp/">regexp</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-03-11
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-03-14
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
+    </span>
+    
+  </div>
+</div>   
+    
+
+
+
+      
+      
+  <div class="tag-line-space"></div>
+
+      
+      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
+        <div class="post-abstract mdui-typo ">
           
             <h1 id="正则表达式语法："><a href="#正则表达式语法：" class="headerlink" title="正则表达式语法："></a>正则表达式语法：</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br></pre></td><td class="code"><pre><span class="line">正则表达式：</span><br><span class="line">一.创建语法：</span><br><span class="line">1，RegExp：</span><br><span class="line">var regexp &#x3D; new RegExp(&#x2F;123&#x2F;);</span><br><span class="line"></span><br><span class="line">2.var 变量 &#x3D; &#x2F;123&#x2F;;</span><br><span class="line"></span><br><span class="line">test：检测字符串</span><br><span class="line">rg.test(&#39;abc&#39;);</span><br><span class="line">&#x2F;&#x2F;测试abc是否符合rg正则表达式</span><br><span class="line"></span><br><span class="line">正则表达式特殊字符：</span><br><span class="line">正则表达式不需要加引号</span><br><span class="line">&#x2F;abc&#x2F;:只要包含abc字符串的字符都能匹配，不管abc在什么位置</span><br><span class="line"></span><br><span class="line">二.正则表达式符号分类：</span><br><span class="line"></span><br><span class="line">1. 边界符：</span><br><span class="line">^:表示匹配行首的文本</span><br><span class="line">$：表示匹配行尾的文本</span><br><span class="line">&#x2F;^abc&#x2F;   匹配以abc开头的字符串</span><br><span class="line">&#x2F;abc$&#x2F;    匹配以abc结尾的字符串</span><br><span class="line">&#x2F;^abc$&#x2F;   匹配abc这个字符串，其他的字符串都不匹配</span><br><span class="line"></span><br><span class="line">2.字符类：</span><br><span class="line">[]:表示有一列的字符可供选择，只要匹配其中一个就行</span><br><span class="line">&#x2F;[abc]&#x2F;</span><br><span class="line">例： &#39;andy&#39;  可以匹配   &#39;baby&#39; 可以匹配</span><br><span class="line">&#39;red&#39;  不能匹配</span><br><span class="line"></span><br><span class="line">&#x2F;^[abc]$] ：表示只有字母a，只有字母b，只有字母c才能匹配</span><br><span class="line">例;&#39;ab&#39;  不能匹配   &#39;bb&#39; 不能匹配  &#39;a&#39;  能匹配</span><br><span class="line"></span><br><span class="line">[-]:方括号内的范围符：</span><br><span class="line">例 ：&#x2F;[a-z]&#x2F;  匹配26个字母中的任意一个都可以</span><br><span class="line">&#39;1a&#39;   可以匹配    &#39;abc&#39;  可以匹配    &#39;Ad&#39; 可以匹配 </span><br><span class="line">&#39;ABC&#39; 不能匹配    &#39;1&#39;  不能匹配</span><br><span class="line"></span><br><span class="line">&#x2F;^[a-z]$&#x2F; :表示只有26个小写字母单独出现才匹配</span><br><span class="line"></span><br><span class="line">&#39;aa&#39;: false   &#39;a&#39; :true</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">3.字符组合：</span><br><span class="line"></span><br><span class="line">var reg &#x3D; &#x2F;^[a-zA-Z0-9]$&#x2F;;</span><br><span class="line">匹配a-z ,A-Z,0-9中任意一个单独的字符</span><br><span class="line">&#39;a&#39; :true  &#39;A&#39;: true  9：true </span><br><span class="line">&#39;aA&#39;: false  &#39;AA&#39;: false </span><br><span class="line"></span><br><span class="line">如果中括号里面有 ^ 表示取反:</span><br><span class="line"></span><br><span class="line">var reg &#x3D; &#x2F;^[^a-zA-Z0-9]$&#x2F;;</span><br><span class="line">不是a-z,A-Z,0-9范围内的单独数字都匹配</span><br><span class="line">&#39;a&#39;:false  &#39;D&#39;:false  &#39;*&#39;: true  &#39;as&#39;:false</span><br><span class="line"></span><br><span class="line">4.量词符：量词是规定某一个模式出现的次数</span><br><span class="line">*：重复零次或更多次</span><br><span class="line">&#x2F;^a*$&#x2F;:匹配一个或无数个a</span><br><span class="line">+：重复一次或更多次</span><br><span class="line">？：重复一次或者零次</span><br><span class="line">&#123;n&#125;：重复n次</span><br><span class="line">&#x2F;^a&#123;3&#125;$&#x2F;:匹配&#39;aaa&#39;</span><br><span class="line">&#123;n，&#125;：重复大于等于n次</span><br><span class="line">&#123;n，m&#125;：重复n到m次</span><br><span class="line"></span><br><span class="line">用户名验证：</span><br><span class="line"> var reg &#x3D; &#x2F;^[a-zA-Z0-9-_]&#123;6,16&#125;$&#x2F;;</span><br><span class="line">表示匹配6到16 位的英文字母，数字，下划线，和-的组合</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">5.括号总结：</span><br><span class="line">中括号：字符集合，匹配括号内的任意字符(多选一)</span><br><span class="line">var reg &#x3D; &#x2F;^[abc]$&#x2F;;  : a||b||c</span><br><span class="line">var reg &#x3D;  &#x2F;[abc]&#x2F;  ；表示匹配所有含有任意个a，b，c的字符串</span><br><span class="line">大括号：量符，表示重复的次数词</span><br><span class="line">var reg &#x3D; &#x2F;^abc&#123;3&#125;$&#x2F;  匹配abccc字符串</span><br><span class="line">小括号：表示优先级</span><br><span class="line">var reg &#x3D; &#x2F;^(abc)&#123;6&#125;$&#x2F; ; :匹配6个abc</span><br><span class="line"></span><br><span class="line">6.预定义类：</span><br><span class="line"></span><br><span class="line">\d :匹配0-9之间的任一数字，相当于[0-9]</span><br><span class="line">\D:匹配所有0-9以外的字符，相当于[^0-9]</span><br><span class="line">\w:匹配任意的字母下划线和数字，相当于[a-zA-z_0-9]</span><br><span class="line">\W：除了所有的字母，数字，下划线以外的所有字符相当于[^a-zA-Z0-9_]</span><br><span class="line">\s:匹配所有空格符(空格符，制表符，换行符等)，相当于[\t\r\f\n\v]</span><br><span class="line">\S:匹配非空格的字符，相当于[^\t\r\f\n\v]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">正则里面的或者是一个 &#39;|&#39;</span><br><span class="line">座机验证：</span><br><span class="line">var reg &#x3D; &#x2F;^\d&#123;3,4&#125;-\d&#123;7,8&#125;$&#x2F;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">7.</span><br><span class="line">手机号表单验证： </span><br><span class="line">var reg &#x3D; &#x2F;^1[3|5|6|8|9]\d&#123;9&#125;$&#x2F;;</span><br><span class="line"></span><br><span class="line">QQ号验证： </span><br><span class="line">var reg &#x3D; &#x2F;^[1-9]\d&#123;4,&#125;$&#x2F;</span><br><span class="line"></span><br><span class="line">短信验证：</span><br><span class="line">var reg &#x3D; &#x2F;^\d&#123;6&#125;$&#x2F;;</span><br><span class="line"></span><br><span class="line">密码验证：</span><br><span class="line">var reg &#x3D; &#x2F;^[a-zA-Z0-9-_]&#123;6,16&#125;$&#x2F;</span><br><span class="line"></span><br><span class="line">正则表达式的替换：</span><br><span class="line"></span><br><span class="line">str.replace(正则表达式switch,替换为的字符)；</span><br><span class="line">switch 取值为:g:全局替换 i:忽略大小写  gi：全局忽略大小写匹配</span><br><span class="line"></span><br><span class="line">例：</span><br><span class="line">str.replace(&#x2F;草&#x2F;g,&#39;**&#39;);&#x2F;&#x2F;将str的全部草替换为&#39;**&#39;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
           
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/10/node3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="张彦书的blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/03/10/node3/" itemprop="url">node3</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-10T12:51:45+08:00">
-                2021-03-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Node/" itemprop="url" rel="index">
-                    <span itemprop="name">Node</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
         
+        <div style="text-align:center;">
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/03/11/regexp/">Read More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
+      
+      
+        <div class="post-header"> 
+  <a class="post-header-title" href="/2021/03/10/node3/">node3</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-03-10
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-03-14
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/Node/">Node</a>
+    </span>
+    
+  </div>
+</div>   
+    
+
+
+
+      
+      
+  <div class="tag-line-space"></div>
+
+      
+      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
+        <div class="post-abstract mdui-typo ">
           
             <h1 id="1-Node服务器-GET参数的获取：GET参数被放置在浏览器的请求地址中"><a href="#1-Node服务器-GET参数的获取：GET参数被放置在浏览器的请求地址中" class="headerlink" title="1.Node服务器 GET参数的获取：GET参数被放置在浏览器的请求地址中"></a>1.Node服务器 GET参数的获取：GET参数被放置在浏览器的请求地址中</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">GET参数获取步骤：</span><br><span class="line">1.通过req.url获取请求地址</span><br><span class="line">2.导入URL模块，使用url模块将获取到的地址转换为一个对象，url会将地址的各个部分放到对象的属性里面，GET参数在其中的query属性中，此时query是一个字符串，而不是我们想要的对象</span><br><span class="line">3.使用yrl.parse(req.url,true)将字符串query转换为对象，就可获得GET的参数</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">代码：</span><br><span class="line">&#x2F;&#x2F;访问地址为：http:&#x2F;&#x2F;localhost:3000&#x2F;?name&#x3D;zys&amp;age&#x3D;22</span><br><span class="line">&#x2F;&#x2F;?后面开始传参</span><br><span class="line">const http &#x3D; require(&#39;http&#39;);</span><br><span class="line">const &#123; allowedNodeEnvironmentFlags &#125; &#x3D; require(&#39;process&#39;);</span><br><span class="line">&#x2F;&#x2F; const &#123; url &#125; &#x3D; require(&#39;inspector&#39;);</span><br><span class="line">const url &#x3D; require(&#39;url&#39;);</span><br><span class="line">const app &#x3D; http.createServer();</span><br><span class="line">app.on(&#39;request&#39;,(req,res) &#x3D;&gt; &#123;</span><br><span class="line">      res.writeHead(200,&#123;&#39;content-type&#39;:&#39;text&#x2F;html;charset&#x3D;utf8&#39;&#125;);</span><br><span class="line">      let para &#x3D; url.parse(req.url,true).query;</span><br><span class="line">      let name &#x3D; para.name;</span><br><span class="line">      let age &#x3D; para.age;</span><br><span class="line">      console.log(para);</span><br><span class="line">      res.end(&#39;GET的name为:&#39;+name +&#39;&lt;br&#x2F;&gt;&#39; + &#39;GET的age为:&#39;+age);</span><br><span class="line">      </span><br><span class="line">&#125;)</span><br><span class="line">app.listen(3000);</span><br><span class="line">console.log(&#39;服务器启动成功&#39;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>获取结果：<br><img src="/2021/03/10/node3/server1.jpg" alt="MD"></p>
-<h1 id="2-node服务器POST参数的获取：POST参数不在地址栏中，而是在请求报文之中"><a href="#2-node服务器POST参数的获取：POST参数不在地址栏中，而是在请求报文之中" class="headerlink" title="2.node服务器POST参数的获取：POST参数不在地址栏中，而是在请求报文之中"></a>2.node服务器POST参数的获取：POST参数不在地址栏中，而是在请求报文之中</h1><p><img src="/2021/03/10/node3/post1.jpg" alt="MD"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">1.post请求代码：</span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta http-equiv&#x3D;&quot;X-UA-Compatible&quot; content&#x3D;&quot;IE&#x3D;edge&quot;&gt;</span><br><span class="line">    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;&#x2F;title&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;form method &#x3D; &quot;post&quot; action&#x3D;&quot;http:&#x2F;&#x2F;localhost:3000&quot;&gt;</span><br><span class="line">        &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;uname&quot;&gt;</span><br><span class="line">        &lt;input type&#x3D;&quot;password&quot; name&#x3D;&quot;pwd&quot;&gt;</span><br><span class="line">        &lt;button type&#x3D;&quot;submit&quot;&gt;提交&lt;&#x2F;button&gt;</span><br><span class="line">    &lt;&#x2F;form&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br><span class="line"></span><br><span class="line">2.post接收代码：</span><br><span class="line">&#x2F;&#x2F;post接收代码是通过data 和end事件接收</span><br><span class="line">&#x2F;&#x2F;data:参数开始传输时触发data事件，data事件传参数不是一次性传完，它是根据数据的大小来确定传输的次数</span><br><span class="line">&#x2F;&#x2F;end：参数传输完毕之后触发end事件</span><br><span class="line">const http &#x3D; require(&#39;http&#39;);</span><br><span class="line">&#x2F;&#x2F;将获取到的post参数转换为对象模式</span><br><span class="line">const querystring &#x3D; require(&#39;querystring&#39;);</span><br><span class="line">const app &#x3D; http.createServer();</span><br><span class="line">app.on(&#39;request&#39;,(req,res) &#x3D;&gt; &#123;</span><br><span class="line">      var params &#x3D; &#39;&#39;;</span><br><span class="line">      req.on(&#39;data&#39;,para &#x3D;&gt;&#123;</span><br><span class="line">          params+&#x3D;para;</span><br><span class="line">      &#125;)</span><br><span class="line">      req.on(&#39;end&#39;,() &#x3D;&gt;&#123;</span><br><span class="line">          console.log(querystring.parse(params));</span><br><span class="line">      &#125;)</span><br><span class="line">      res.end(&#39;ok&#39;);</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(3000);</span><br><span class="line">console.log(&#39;服务器启动成功&#39;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>获取结果<br><img src="/2021/03/10/node3/post2.jpg" alt="MD"><br><img src="/2021/03/10/node3/post3.jpg" alt="MD"></p>
-
           
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/09/node2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="张彦书的blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/03/09/node2/" itemprop="url">node2</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-09T22:58:05+08:00">
-                2021-03-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Node/" itemprop="url" rel="index">
-                    <span itemprop="name">Node</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
         
+        <div style="text-align:center;">
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/03/10/node3/">Read More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
+      
+      
+        <div class="post-header"> 
+  <a class="post-header-title" href="/2021/03/09/node2/">node2</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-03-09
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-03-14
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/Node/">Node</a>
+    </span>
+    
+  </div>
+</div>   
+    
+
+
+
+      
+      
+  <div class="tag-line-space"></div>
+
+      
+      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
+        <div class="post-abstract mdui-typo ">
           
             <h1 id="1-Node服务器搭建"><a href="#1-Node服务器搭建" class="headerlink" title="1.Node服务器搭建"></a>1.Node服务器搭建</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">服务器搭建步骤：</span><br><span class="line">1.导入http模块</span><br><span class="line">2.使用createSever()创建服务器站点</span><br><span class="line">3.绑定客户端请求事件</span><br><span class="line">4.监听端口</span><br><span class="line">5.使用服务器端口访问服务器</span><br><span class="line"></span><br><span class="line">例：</span><br><span class="line">&#x2F;&#x2F;导入http模块</span><br><span class="line">const http  &#x3D; require(&#39;http&#39;);</span><br><span class="line">&#x2F;&#x2F;创建服务器站点</span><br><span class="line">const app &#x3D; http.createServer();</span><br><span class="line">&#x2F;&#x2F;绑定客户端请求事件</span><br><span class="line">app.on(&#39;request&#39;,(req,res) &#x3D;&gt; &#123;</span><br><span class="line">    &#x2F;&#x2F;将返回的文档类型设置为HTML格式同时返回200状态码和设置编码方式为UTF8；</span><br><span class="line">    &#x2F;&#x2F;不设置utf8编码，中文会显示为乱码</span><br><span class="line">    res.writeHead(200,&#123;&#39;content-type&#39;:&#39;text&#x2F;html;charset&#x3D;utf8&#39;&#125;);</span><br><span class="line">    res.end(&#39;&lt;h2&gt;欢迎访问node服务器&lt;&#x2F;h2&gt;&#39;);</span><br><span class="line">&#125;)</span><br><span class="line">&#x2F;&#x2F;监听3000端口</span><br><span class="line">app.listen(3000);</span><br><span class="line">console.log(&#39;服务器启动成功&#39;);</span><br><span class="line"></span><br><span class="line">运行结果：</span><br></pre></td></tr></table></figure>
-<p><img src="/2021/03/09/node2/server1.jpg" alt="MD"><br><img src="/2021/03/09/node2/server2.jpg" alt="MD"></p>
-<h2 id="2-http协议：规定了网站服务器如何传送超文本到客户端，是客户端与服务器请求和响应的标准"><a href="#2-http协议：规定了网站服务器如何传送超文本到客户端，是客户端与服务器请求和响应的标准" class="headerlink" title="2.http协议：规定了网站服务器如何传送超文本到客户端，是客户端与服务器请求和响应的标准"></a>2.http协议：规定了网站服务器如何传送超文本到客户端，是客户端与服务器请求和响应的标准</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">一.HTTP的请求方式：</span><br><span class="line">1、OPTIONS</span><br><span class="line">返回服务器针对特定资源所支持的HTTP请求方法，也可以利用向web服务器发送‘*’的请求来测试服务器的功能性</span><br><span class="line">2、HEAD</span><br><span class="line">向服务器索与GET请求相一致的响应，只不过响应体将不会被返回。这一方法可以再不必传输整个响应内容的情况下，就可以获取包含在响应小消息头中的元信息。</span><br><span class="line">3、GET</span><br><span class="line">向特定的资源发出请求。注意：GET方法不应当被用于产生“副作用”的操作中，例如在Web Application中，其中一个原因是GET可能会被网络蜘蛛等随意访问。Loadrunner中对应get请求函数：web_link和web_url</span><br><span class="line">4、POST</span><br><span class="line">向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST请求可能会导致新的资源的建立和&#x2F;或已有资源的修改。 Loadrunner中对应POST请求函数：web_submit_data,web_submit_form</span><br><span class="line">5、PUT</span><br><span class="line">向指定资源位置上传其最新内容</span><br><span class="line">6、DELETE</span><br><span class="line">请求服务器删除Request-URL所标识的资源</span><br><span class="line">7、TRACE</span><br><span class="line">回显服务器收到的请求，主要用于测试或诊断</span><br><span class="line">8、CONNECT</span><br><span class="line">HTTP&#x2F;1.1协议中预留给能够将连接改为管道方式的代理服务器。</span><br><span class="line"></span><br><span class="line">二.HTTP状态码：</span><br><span class="line"></span><br><span class="line">1.HTTP状态码：</span><br><span class="line">200：请求成功</span><br><span class="line">404：请求的资源没有找到</span><br><span class="line">400：客户端请求语法出错、</span><br><span class="line">500：服务器出错</span><br><span class="line">304状态码：304状态码或许不应该认为是一种错误，而是对客户端有缓存情况下</span><br><span class="line">服务端的一种响应，客户端在请求一个文件的时候，发现自己缓存的文件有 Last Modified ，</span><br><span class="line">那么在请求中会包含 If Modified Since ，这个时间就是缓存文件的 Last Modified 。因此，</span><br><span class="line">如果请求中包含 If Modified Since，就说明已经有缓存在客户端。服务端只要判断这个时间和当</span><br><span class="line">前请求的文件的修改时间就可以确定是返回 304 还是 200 。对于静态文件，例如：CSS、图片，</span><br><span class="line">服务器会自动完成 Last Modified 和 If Modified Since 的比较，完成缓存或者更新。</span><br><span class="line">但是对于动态页面，就是动态产生的页面，往往没有包含 Last Modified 信息，这样浏览器、网关</span><br><span class="line">等都不会做缓存，也就是在每次请求的时候都完成一个 200 的请求。</span><br><span class="line"></span><br><span class="line">因此，对于动态页面做缓存加速，首先要在 Response 的 HTTP Header 中增加 Last Modified 定义，其</span><br><span class="line">次根据 Request 中的 If Modified Since 和被请求内容的更新时间来返回 200 或者 304 。虽然在返回 </span><br><span class="line">304 的时候已经做了一次数据库查询，但是可以避免接下来更多的数据库查询，</span><br><span class="line">并且没有返回页面内容而只是一个 HTTP Header，从而大大的降低带宽的消耗，对于用户的感觉也是提高。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
           
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/09/node1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="张彦书的blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/03/09/node1/" itemprop="url">node1</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-09T12:49:24+08:00">
-                2021-03-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Node/" itemprop="url" rel="index">
-                    <span itemprop="name">Node</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
         
+        <div style="text-align:center;">
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/03/09/node2/">Read More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
+      
+      
+        <div class="post-header"> 
+  <a class="post-header-title" href="/2021/03/09/node1/">node1</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-03-09
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-03-14
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/Node/">Node</a>
+    </span>
+    
+  </div>
+</div>   
+    
+
+
+
+      
+      
+  <div class="tag-line-space"></div>
+
+      
+      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
+        <div class="post-abstract mdui-typo ">
           
             <h1 id="Node基础："><a href="#Node基础：" class="headerlink" title="Node基础："></a>Node基础：</h1><h2 id="1-Node是什么？"><a href="#1-Node是什么？" class="headerlink" title="1.Node是什么？"></a>1.Node是什么？</h2><ul>
 <li>Node是一个基于chrome v8引擎的javascript运行环境</li>
 <li>Node的组成：ECMAScript,Node模块API</li>
-<li>所有的ECMAScript语法在Node环境中都可以使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">node的使用：</span><br><span class="line">例：</span><br><span class="line">&#x2F;&#x2F;在node目录下创建 helloworld.js文件：</span><br><span class="line">&#x2F;&#x2F;在创建的文件中输入：</span><br><span class="line">var first &#x3D; &quot;hello node&quot;;</span><br><span class="line">console.log(first);</span><br><span class="line">for(var i&#x3D;0;i&lt;4;i++)&#123;</span><br><span class="line">    console.log(i);</span><br><span class="line">&#125;</span><br><span class="line">function fn()&#123;</span><br><span class="line">    console.log(&quot;fn函数被调用&quot;);</span><br><span class="line">&#125;</span><br><span class="line">fn();</span><br><span class="line">&#x2F;&#x2F;然后用命令行打开node文件目录，使用node helloworld.js运行js文件,即可得到运行结果</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="2-Node的模块开发："><a href="#2-Node的模块开发：" class="headerlink" title="2.Node的模块开发："></a>2.Node的模块开发：</h2></li>
-<li>模块化开发：一个功能就是一个模块，多个模块可以组成完整的应用，抽离一个模块不会影响其他功能的运行</li>
-<li>node模块分为两种：系统模块，第三方模块</li>
-<li>node规定：一个js文件就是一个模块，模块内定义的函数和变量，其他外部文件不可调用，但是模块内部可以使用exports对象进行成员导出，使用require导入其他模块<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">例</span><br><span class="line">&#x2F;&#x2F;a.js文件</span><br><span class="line">function add(a,b)&#123;</span><br><span class="line">    return a+b;</span><br><span class="line">&#125;</span><br><span class="line">exports.add &#x3D; add;&#x2F;&#x2F;导出add函数</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;b.js文件</span><br><span class="line"></span><br><span class="line">require(&#39;a.js&#39;);&#x2F;&#x2F;返回的是exports的对象即add函数</span><br><span class="line">const a &#x3D; require(&#39;a.js&#39;);</span><br><span class="line">console(a(1,2)); &#x2F;&#x2F;调用add函数</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="2-1系统模块：即node环境提供的api"><a href="#2-1系统模块：即node环境提供的api" class="headerlink" title="2.1系统模块：即node环境提供的api"></a>2.1系统模块：即node环境提供的api</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">1.文件模块fs:</span><br><span class="line">导入方法： const fs &#x3D; require(&#39;fs&#39;);</span><br><span class="line">fs模块的方法有：读取文件： fs.readFile(),写文件：fs.writeFile()</span><br><span class="line">读取文件的语法：fs.readFile(&#39;文件地址&#x2F;文件名称&#39;, callback回调函数)</span><br><span class="line"></span><br><span class="line">例：</span><br><span class="line">fs.readFile(&#39;&#x2F;user&#x2F;ex.txt&#39;,(err, doc) &#x3D;&gt;&#123;</span><br><span class="line">    &#x2F;&#x2F;如果读取文件失败，err返回错误信息，如果读取成功，doc为文件内容,err为null</span><br><span class="line">    if(err&#x3D;&#x3D;null)&#123;</span><br><span class="line">        console.log(doc);</span><br><span class="line">    &#125;</span><br><span class="line">&#125; )</span><br><span class="line"></span><br><span class="line">写入文件的语法：fs.writeFile(&#39;文件地址&#x2F;文件名称&#39;，&#39;写入内容&#39;，回调函数callback)</span><br><span class="line">例：</span><br><span class="line">fs.writeFile(&#39;demo&#x2F;1.txt&#39;,&#39;即将写入的内容&#39;,err &#x3D;&gt;&#123;</span><br><span class="line">    if(err!&#x3D;null)&#123;</span><br><span class="line">        console.log(&#39;文件写入失败&#39;);</span><br><span class="line">        return;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    console.log(&#39;文件写入成功&#39;);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">2.路径模块path:常用于路径拼接</span><br><span class="line">path.join(&#39;1&#39;,&#39;2&#39;,&#39;3&#39;);&#x2F;&#x2F;将1，2,3拼接为一个适合于所有操作系统的文件路径</span><br><span class="line"></span><br><span class="line">获取绝对路径的方法：__dirname:获取当前文件目录的绝对路径</span><br></pre></td></tr></table></figure>
-<h3 id="2-2：第三方模块：别人写好的，具有特点功能的，我们可以直接拿过来使用的模块即为第三方模块-由于第三方模块一般都由多个文件组成放在一个文件夹中，因此第三方模块又叫包"><a href="#2-2：第三方模块：别人写好的，具有特点功能的，我们可以直接拿过来使用的模块即为第三方模块-由于第三方模块一般都由多个文件组成放在一个文件夹中，因此第三方模块又叫包" class="headerlink" title="2.2：第三方模块：别人写好的，具有特点功能的，我们可以直接拿过来使用的模块即为第三方模块,由于第三方模块一般都由多个文件组成放在一个文件夹中，因此第三方模块又叫包"></a>2.2：第三方模块：别人写好的，具有特点功能的，我们可以直接拿过来使用的模块即为第三方模块,由于第三方模块一般都由多个文件组成放在一个文件夹中，因此第三方模块又叫包</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">第三方模块有两种形式:1.以包的形式，提供实现项目的具体功能api   2.以命令行根据形式存在，辅助项目开发</span><br><span class="line">获取第三方模块：</span><br><span class="line">npm:node package manager :node 的第三方模块管理工具</span><br><span class="line">使用第三方模块步骤：</span><br><span class="line">1.下载第三方模块： npm install 第三方模块名称  注：具体模块的下载方式可取官网查，有具体的步骤</span><br><span class="line">2.在需要的模块内导入第三方模块：require(&#39;模块名称&#39;);</span><br><span class="line">3.使用</span><br><span class="line">命令行工具：全局安装</span><br><span class="line">库文件：本地安装</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">注：实用的第三方模块：</span><br><span class="line">1.nodemon :检测node文件的保存操作，一旦保存，便自动运行node文件</span><br><span class="line">npm install nodemon -g</span><br><span class="line">使用方法： 用nodemon 代替node执行文件</span><br><span class="line"></span><br><span class="line">2.nrm :切换npm下载地址：将下载地址转换到国内服务器，提高下载速度</span><br><span class="line"></span><br><span class="line">nmp install nrm -g</span><br><span class="line"></span><br><span class="line">nrm use taobao &#x2F;&#x2F;切换下载地址到淘宝服务器</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-</ul>
-
+<li>所有的ECMAScript语法在Nod...
           
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/06/css3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="张彦书的blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/03/06/css3/" itemprop="url">css3</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-06T22:13:44+08:00">
-                2021-03-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">web前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
         
-          
-            <h1 id="css3学习笔记"><a href="#css3学习笔记" class="headerlink" title="css3学习笔记:"></a>css3学习笔记:</h1><h2 id="1-清除浮动的方法（非CSS3内容）"><a href="#1-清除浮动的方法（非CSS3内容）" class="headerlink" title="1.清除浮动的方法（非CSS3内容）"></a>1.清除浮动的方法（非CSS3内容）</h2><h2 id="clear-both"><a href="#clear-both" class="headerlink" title="+ clear:both"></a>+ clear:both</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*使用方法：在需要清除浮动的元素后面加入</span><br><span class="line">同时在style里面定义clear类</span><br><span class="line">&lt;style&gt;</span><br><span class="line">.clear&#123;clear:both;&#125;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;clear&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">缺点：会多加一个div元素，而且会破坏HTML代码的语义性</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
-
-<h2 id="overflow-hidden"><a href="#overflow-hidden" class="headerlink" title="+ overflow:hidden"></a>+ overflow:hidden</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*缺点：会隐藏超出父元素的部分*&#x2F;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="after伪元素"><a href="#after伪元素" class="headerlink" title="+ ::after伪元素"></a>+ ::after伪元素</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*比较好的解决方案*&#x2F;</span><br><span class="line">用法：</span><br><span class="line">.clearfix&#123;*zoom:1&#125;&#x2F;&#x2F;用于解决IE6,IE7浮动内容</span><br><span class="line">.clearfix::after&#123;</span><br><span class="line">    clear:both;</span><br><span class="line">    content:&quot;&quot;;</span><br><span class="line">    display:block;</span><br><span class="line">    height:0;</span><br><span class="line">    visibility:hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="2-css3渐变：background-渐变方向，开始颜色，结束颜色"><a href="#2-css3渐变：background-渐变方向，开始颜色，结束颜色" class="headerlink" title="2.css3渐变：background:(渐变方向，开始颜色，结束颜色)"></a>2.css3渐变：background:(渐变方向，开始颜色，结束颜色)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">渐变方向取值：to left, to right ,to buttom, to top 等</span><br><span class="line">例：</span><br><span class="line">#box</span><br><span class="line">&#123;</span><br><span class="line">    width:200px;</span><br><span class="line">    height:100px;</span><br><span class="line">    background:linear-gradient(to right,yellow, red);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="3-css变形：transform-变形方式"><a href="#3-css变形：transform-变形方式" class="headerlink" title="3.css变形：transform: 变形方式"></a>3.css变形：transform: 变形方式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">变形方式取值：translate(平移)，scale(缩放)</span><br><span class="line">，skew(倾斜)，rotate(旋转)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="4-css过渡：transition-过渡"><a href="#4-css过渡：transition-过渡" class="headerlink" title="4. css过渡：transition:过渡"></a>4. css过渡：transition:过渡</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">用法：transition: 过渡属性 过渡时间 过渡方式 延迟时间;</span><br><span class="line">例：</span><br><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">    display:flex;</span><br><span class="line">    width:200px;</span><br><span class="line">    height:200px;</span><br><span class="line">    border-radius:50%;</span><br><span class="line">    transition: all 0.5s;</span><br><span class="line">&#125;</span><br><span class="line">div:hover</span><br><span class="line">&#123;</span><br><span class="line">    width:400px;</span><br><span class="line">    height:400px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="5-css动画：animation"><a href="#5-css动画：animation" class="headerlink" title="5.css动画：animation"></a>5.css动画：animation</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">animation(动画名称，持续时间，动画方式，延迟时间，动画次数，动画方向)</span><br><span class="line">注：一般只使用前面两个属性和动画次数</span><br><span class="line">animation使用一般有两步：</span><br><span class="line">1.定义@keyframes动画</span><br><span class="line">2.在animation中调用你定义的@keyframes动画</span><br><span class="line">例：</span><br><span class="line"></span><br><span class="line">@keyframes ballmov</span><br><span class="line">&#123;</span><br><span class="line">    0%&#123;&#125;</span><br><span class="line">    50%&#123;transform:translateX(300px);&#125;</span><br><span class="line">    100%&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">#box</span><br><span class="line">&#123;</span><br><span class="line">    display:inline-block;</span><br><span class="line">    width:420px;</span><br><span class="line">    height:102px;</span><br><span class="line">    border:1px solid black;</span><br><span class="line">&#125;</span><br><span class="line">#ball</span><br><span class="line">&#123;</span><br><span class="line">    width:100px;</span><br><span class="line">    height:100px;</span><br><span class="line">    border-radius:50%;</span><br><span class="line">    background-color:yellow;</span><br><span class="line">    animation:ballmov 5s linear infinite;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="6-弹性盒子："><a href="#6-弹性盒子：" class="headerlink" title="6.弹性盒子："></a>6.弹性盒子：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">弹性盒子属性：</span><br><span class="line">flex-grow:子元素放大的比例</span><br><span class="line">flex-shrink:子元素的缩小比例</span><br><span class="line">flex-basis:子元素的宽度（和width效果一样，优先级大于width)</span><br><span class="line">flex:flex-grow flex-shrink flex-basis(是一个复合属性)</span><br><span class="line">flex-direction:子元素的排列方向</span><br><span class="line">flex-wrap:子元素是单行显示还是多行显示</span><br><span class="line">flex-flow:flex-direction和flex-wrap的复合属性</span><br><span class="line">order:子元素的排列顺序，值小的排在前面</span><br><span class="line">justify-content:子元素在横轴上的排列方式</span><br><span class="line">align-items:子元素在纵轴上的排列方式</span><br><span class="line">例:</span><br><span class="line">让div的子元素居中：</span><br><span class="line">div</span><br><span class="line">&#123;</span><br><span class="line">    display:flex;</span><br><span class="line">    justify-content:center;</span><br><span class="line">    align-items:center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/06/jquery1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="张彦书的blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/03/06/jquery1/" itemprop="url">jquery1</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-06T20:49:00+08:00">
-                2021-03-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">web前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div style="text-align:center;">
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/03/09/node1/">Read More</a>
         </div>
-      </header>
+      </div>
+    </article>
+
+    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
+      
+      
+        <div class="post-header"> 
+  <a class="post-header-title" href="/2021/03/06/css3/">css3</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-03-06
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-03-14
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a>
+    </span>
+    
+  </div>
+</div>   
     
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+
 
       
       
+  <div class="tag-line-space"></div>
 
       
+      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
+        <div class="post-abstract mdui-typo ">
+          
+            <h1 id="css3学习笔记"><a href="#css3学习笔记" class="headerlink" title="css3学习笔记:"></a>css3学习笔记:</h1><h2 id="1-清除浮动的方法（非CSS3内容）"><a href="#1-清除浮动的方法（非CSS3内容）" class="headerlink" title="1.清除浮动的方法（非CSS3内容）"></a>1.清除浮动的方法（非CSS3内容）</h2><h2 id="clear-both"><a href="#clear-both" class="headerlink" title="+ cle...
+          
+        </div>
         
+        <div style="text-align:center;">
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/03/06/css3/">Read More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
+      
+      
+        <div class="post-header"> 
+  <a class="post-header-title" href="/2021/03/06/jquery1/">jquery1</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-03-06
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-03-14
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a>
+    </span>
+    
+  </div>
+</div>   
+    
+
+
+
+      
+      
+  <div class="tag-line-space"></div>
+
+      
+      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
+        <div class="post-abstract mdui-typo ">
           
             <h1 id="jquery学习笔记"><a href="#jquery学习笔记" class="headerlink" title="jquery学习笔记"></a>jquery学习笔记</h1><h2 id="1-Jquery对象与dom对象的区别与相互转换："><a href="#1-Jquery对象与dom对象的区别与相互转换：" class="headerlink" title="1.Jquery对象与dom对象的区别与相互转换："></a>1.Jquery对象与dom对象的区别与相互转换：</h2><ul>
-<li>区别：jquery对象是指通过jquery方法获取的对象，dom对象是指使用javascript获取的对象</li>
-<li>相互转换:</li>
-</ul>
-<ol>
-<li>dom对象转换为jquery对象,$(dom对象)</li>
-<li>jquery对象转换为dom对象:第一种方法：$()[index]，第二种方法:$().get(index)</li>
-</ol>
-<h2 id="2-事件的绑定-on-“事件类型”，”给子元素事件委托”，fn"><a href="#2-事件的绑定-on-“事件类型”，”给子元素事件委托”，fn" class="headerlink" title="2.事件的绑定:$().on(“事件类型”，”给子元素事件委托”，fn)"></a>2.事件的绑定:$().on(“事件类型”，”给子元素事件委托”，fn)</h2><p>例:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;ol&quot;).on(&quot;click&quot;,&quot;li&quot;,function()&#123;</span><br><span class="line">    alert(&quot;为子元素Li绑定事件click&quot;);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h3 id="事件绑定相对于基本事件的优势："><a href="#事件绑定相对于基本事件的优势：" class="headerlink" title="事件绑定相对于基本事件的优势："></a>事件绑定相对于基本事件的优势：</h3><ol>
-<li>事件绑定可以为未来动态创建的元素进行事件绑定</li>
-<li>可以进行事件委托</li>
-<li>可绑定多个事件，多个事件处理程序</li>
-</ol>
-<h2 id="3-对象拷贝"><a href="#3-对象拷贝" class="headerlink" title="3.对象拷贝"></a>3.对象拷贝</h2><p>语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$.extend(bool值，obj目标对象，原对象)</span><br><span class="line">&#x2F;&#x2F;bool值为true代表深拷贝，为false代表浅拷贝</span><br><span class="line">&#x2F;&#x2F;浅拷贝:只会将复杂数据类型的地址拷贝给目标地址，修改目标对象会影响原对象</span><br><span class="line">&#x2F;&#x2F;深拷贝:完全克隆，修改目标对象不会对原对象有影响</span><br><span class="line">&#x2F;&#x2F;例</span><br><span class="line">$.extend(obj1,obj); &#x2F;&#x2F;用浅拷贝的方式将obj对象拷贝到obj1</span><br><span class="line">$.extend(true,obj1,obj);&#x2F;&#x2F;用深拷贝的方式将obj对象拷贝到obj1</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="jquery常用插件：（jQuery插件推荐网站：jQuery之家，bootstrap）"><a href="#jquery常用插件：（jQuery插件推荐网站：jQuery之家，bootstrap）" class="headerlink" title="jquery常用插件：（jQuery插件推荐网站：jQuery之家，bootstrap）"></a>jquery常用插件：（jQuery插件推荐网站：jQuery之家，bootstrap）</h2><h3 id="1-瀑布流插件"><a href="#1-瀑布流插件" class="headerlink" title="1.瀑布流插件"></a>1.瀑布流插件</h3><h3 id="2-lazyload（图片懒加载插件）：图片懒加载：即在页面加载图片时，只会加载可见区域的图片，大大提高了网页的加载速度"><a href="#2-lazyload（图片懒加载插件）：图片懒加载：即在页面加载图片时，只会加载可见区域的图片，大大提高了网页的加载速度" class="headerlink" title="2.lazyload（图片懒加载插件）：图片懒加载：即在页面加载图片时，只会加载可见区域的图片，大大提高了网页的加载速度"></a>2.lazyload（图片懒加载插件）：图片懒加载：即在页面加载图片时，只会加载可见区域的图片，大大提高了网页的加载速度</h3><h3 id="3-全屏滚动插件"><a href="#3-全屏滚动插件" class="headerlink" title="3.全屏滚动插件"></a>3.全屏滚动插件</h3>
+<li>区别：jquery对象是指通过jquery方法获取的对象，d...
           
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/04/css3apply/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="张彦书的blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/03/04/css3apply/" itemprop="url">css3apply</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-04T16:23:43+08:00">
-                2021-03-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index">
-                    <span itemprop="name">web前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
         
+        <div style="text-align:center;">
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/03/06/jquery1/">Read More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
+      
+      
+        <div class="post-header"> 
+  <a class="post-header-title" href="/2021/03/04/css3apply/">css3apply</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-03-04
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-03-14
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a>
+    </span>
+    
+  </div>
+</div>   
+    
+
+
+
+      
+      
+  <div class="tag-line-space"></div>
+
+      
+      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
+        <div class="post-abstract mdui-typo ">
           
             <h1 id="css3的简单运用实例"><a href="#css3的简单运用实例" class="headerlink" title="css3的简单运用实例:"></a>css3的简单运用实例:</h1><h1 id="1-运用边框阴影实现鸡蛋特效"><a href="#1-运用边框阴影实现鸡蛋特效" class="headerlink" title="1.运用边框阴影实现鸡蛋特效"></a>1.运用边框阴影实现鸡蛋特效</h1><p>代码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;utf-8&quot; &#x2F;&gt;</span><br><span class="line">    &lt;title&gt;&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line">    div</span><br><span class="line">    &#123;</span><br><span class="line">       width: 160px;</span><br><span class="line">       height: 100px;</span><br><span class="line">       line-height: 100px;</span><br><span class="line">       text-align: center;</span><br><span class="line">       border-radius: 80px&#x2F;50px;</span><br><span class="line">       color: white;</span><br><span class="line">       background: -webkit-linear-gradient(top left,yellow, orangered);</span><br><span class="line">    &#125;</span><br><span class="line">    &lt;&#x2F;style&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
-<h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图:"></a>效果图:</h1><p><img src="/2021/03/04/css3apply/egg.jpg" alt="egg"></p>
-<h1 id="2-运用css3实现卡通："><a href="#2-运用css3实现卡通：" class="headerlink" title="2.运用css3实现卡通："></a>2.运用css3实现卡通：</h1><p>代码如下；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line">        &#x2F;*整体布局方式*&#x2F;</span><br><span class="line">        body &#123;background: #68b8ed;&#125;</span><br><span class="line">        .eye-brow,.eye,.pupil,.shine,.nose,.mouth &#123;display: inline-block;&#125;</span><br><span class="line">        .mr-border-radius,.eye,.pupil,.shine,.nose,.mouth &#123;position: relative;&#125;</span><br><span class="line">        .left-eye,.left-blush &#123;float: left;&#125;</span><br><span class="line">        .right-eye,.right-blush &#123;float: right;&#125;</span><br><span class="line">        &#x2F;*外层div样式*&#x2F;</span><br><span class="line">        .mr-border-radius </span><br><span class="line">        &#123;</span><br><span class="line">            margin: auto;</span><br><span class="line">            margin-top: 10%;</span><br><span class="line">            width: 550px;</span><br><span class="line">            height: 430px;</span><br><span class="line">            background-color: #FFB010;</span><br><span class="line">            background-image: radial-gradient(circle, #FFD47F, #FFB010);</span><br><span class="line">            border: solid #CC8800;</span><br><span class="line">            border-radius: 40px;</span><br><span class="line">            border-width: 10px 20px 0 0;</span><br><span class="line">            box-shadow: 20px 10px 30px 0 rgba(0, 0, 0, .6);</span><br><span class="line">            transition: all .5s;</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;*眉毛*&#x2F;</span><br><span class="line">        .eye-brow </span><br><span class="line">        &#123;</span><br><span class="line">            position: absolute;</span><br><span class="line">            top: 15%;</span><br><span class="line">            width: 135px;</span><br><span class="line">            height: 90px;</span><br><span class="line">            border-radius: 100%;</span><br><span class="line">            background: transparent;</span><br><span class="line">            box-shadow: 0 -15px 0 0 #995E00;</span><br><span class="line">            transition: top .5s;</span><br><span class="line">        &#125;</span><br><span class="line">        .left-eye-brow &#123;left: 10%; transform: rotate(-15deg);&#125;</span><br><span class="line">        .right-eye-brow &#123;right: 10%;transform: rotate(15deg);&#125;</span><br><span class="line">        &#x2F;*眼睛*&#x2F;</span><br><span class="line">        .eye </span><br><span class="line">        &#123;</span><br><span class="line">            width: 130px;</span><br><span class="line">            height: 130px;</span><br><span class="line">            margin-top: 20%;</span><br><span class="line">            border-radius: 100%;</span><br><span class="line">            background: white;</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;*脸红*&#x2F;</span><br><span class="line">        .blush </span><br><span class="line">        &#123;</span><br><span class="line">            width: 65px;</span><br><span class="line">            height: 55px;</span><br><span class="line">            margin-top: 43%;</span><br><span class="line">            border-radius: 90%;</span><br><span class="line">            background: #FFA249;</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;*瞳孔*&#x2F;</span><br><span class="line">        .pupil </span><br><span class="line">        &#123;</span><br><span class="line">            height: 80px;</span><br><span class="line">            width: 80px;</span><br><span class="line">            margin-top: 25%;</span><br><span class="line">            margin-left: 10%;</span><br><span class="line">            background: black;</span><br><span class="line">            border-radius: 100%;</span><br><span class="line">            transition: margin-left .5s;</span><br><span class="line">        &#125;</span><br><span class="line">        .shine </span><br><span class="line">        &#123;</span><br><span class="line">            height: 15px;</span><br><span class="line">            width: 15px;</span><br><span class="line">            margin-top: 15%;</span><br><span class="line">            margin-left: 25%;</span><br><span class="line">            border-radius: 100%;</span><br><span class="line">            background: white;</span><br><span class="line">            transition: all .5s;</span><br><span class="line">        &#125;</span><br><span class="line">        .shine:after </span><br><span class="line">        &#123;</span><br><span class="line">            content: &quot;&quot;;</span><br><span class="line">            position: relative;</span><br><span class="line">            display: inline-block;</span><br><span class="line">            top: 65%;</span><br><span class="line">            left: -50%;</span><br><span class="line">            height: 8px;</span><br><span class="line">            width: 8px;</span><br><span class="line">            border-radius: 100%;</span><br><span class="line">            background: white;</span><br><span class="line">        &#125;</span><br><span class="line">        .eye.left-eye &#123;margin-left: 15%;&#125;</span><br><span class="line">        .blush.left-blush &#123;margin-left: -15%; &#125;</span><br><span class="line">        .eye.right-eye &#123; margin-right: 15%;&#125;</span><br><span class="line">        .blush.right-blush &#123;margin-right: -15%;&#125;</span><br><span class="line">        &#x2F;*鼻子*&#x2F;</span><br><span class="line">        .nose </span><br><span class="line">        &#123;</span><br><span class="line">            left: 8%;</span><br><span class="line">            top: 55%;</span><br><span class="line">            width: 40px;</span><br><span class="line">            height: 35px;</span><br><span class="line">            border-radius: 100%;</span><br><span class="line">            box-shadow: 0 10px 0 0 #E59200;</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;*嘴巴*&#x2F;</span><br><span class="line">        .mouth </span><br><span class="line">        &#123;</span><br><span class="line">            left: 2.5%;</span><br><span class="line">            top: 50%;</span><br><span class="line">            width: 100px;</span><br><span class="line">            height: 100px;</span><br><span class="line">            border-radius: 100%;</span><br><span class="line">            background: transparent;</span><br><span class="line">            box-shadow: 0 15px 0 0;</span><br><span class="line">            transition: box-shadow .5s;</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;*鼠标移到头像上时*&#x2F;</span><br><span class="line">        .mr-border-radius:hover </span><br><span class="line">        &#123;</span><br><span class="line">            border-width: 10px 0 0 20px;</span><br><span class="line">            box-shadow: -20px 10px 30px 0 rgba(0, 0, 0, .6);</span><br><span class="line">        &#125;</span><br><span class="line">        .mr-border-radius:hover .pupil &#123;margin-left: 27%; &#125;</span><br><span class="line">        .mr-border-radius:hover .shine &#123;margin-left: 60%;&#125;</span><br><span class="line">        .mr-border-radius:hover .mouth &#123;box-shadow: 0 35px 0 0;&#125;</span><br><span class="line">        .mr-border-radius:hover .eye-brow &#123;top: 10%;&#125;</span><br><span class="line">    &lt;&#x2F;style&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;mr-border-radius&quot;&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;eye-brow left-eye-brow&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;eye left-eye&quot;&gt;</span><br><span class="line">            &lt;span class&#x3D;&quot;pupil&quot;&gt;</span><br><span class="line">                &lt;span class&#x3D;&quot;shine&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">            &lt;&#x2F;span&gt;</span><br><span class="line">        &lt;&#x2F;span&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;eye-brow right-eye-brow&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;eye right-eye&quot;&gt;</span><br><span class="line">            &lt;span class&#x3D;&quot;pupil&quot;&gt;</span><br><span class="line">                &lt;span class&#x3D;&quot;shine&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">            &lt;&#x2F;span&gt;</span><br><span class="line">        &lt;&#x2F;span&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;blush left-blush&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;blush right-blush&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;nose&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;mouth&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="效果图-1"><a href="#效果图-1" class="headerlink" title="效果图"></a>效果图</h2><h1 id="向右摇头"><a href="#向右摇头" class="headerlink" title="向右摇头"></a>向右摇头</h1><p><img src="/2021/03/04/css3apply/cartoon.jpg" alt="卡通"></p>
-<h1 id="向左摇头"><a href="#向左摇头" class="headerlink" title="向左摇头"></a>向左摇头</h1><p><img src="/2021/03/04/css3apply/cartoon1.jpg" alt="卡通"></p>
-
           
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/10/Sort2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="张彦书的blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/01/10/Sort2/" itemprop="url">Sort2</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-10T19:51:53+08:00">
-                2021-01-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
-                    <span itemprop="name">算法</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
         
+        <div style="text-align:center;">
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/03/04/css3apply/">Read More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
+      
+      
+        <div class="post-header"> 
+  <a class="post-header-title" href="/2021/01/10/Sort2/">Sort2</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-01-10
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-03-14
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
+    </span>
+    
+  </div>
+</div>   
+    
+
+
+
+      
+      
+  <div class="tag-line-space"></div>
+
+      
+      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
+        <div class="post-abstract mdui-typo ">
           
             <h2 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h2><h3 id="1-冒泡排序"><a href="#1-冒泡排序" class="headerlink" title="1.冒泡排序"></a>1.冒泡排序</h3><ul>
-<li><p>思路：将一组元素从后往前，依次与前面一个元素进行比较，如果后面的元素比前面的元素小，交换两个元素的位置，再让前面一个元素与其前面的元素进行比较，直到比到有序序列的最后的一个元素为止，每比较一趟都可以得到一个元素的最终为止，比较n-1趟即可打的一组有序的元素</p>
-</li>
-<li><p>注意：设立一个flag标记，当flag标记不发生改变时，即代表这组元素已有序，即可跳出循环</p>
-</li>
-</ul>
-<blockquote>
-<p>Javascript代码：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const bubbleSort &#x3D; (var A[], var n) &#x3D;&gt;&#123;</span><br><span class="line">    for(let i &#x3D; 0;i&lt; n-1;i++)&#123;</span><br><span class="line">        let flag &#x3D; false;</span><br><span class="line">        for(let j &#x3D; n-1;j&gt;i;j--)&#123;</span><br><span class="line">            if(A[j]&gt;A[j-1])&#123;</span><br><span class="line">                [A[j],A[j-1]] &#x3D; [A[j-1],A[j]];</span><br><span class="line">                flag &#x3D; true;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        if(flag&#x3D;&#x3D;flase) return;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-快速排序"><a href="#2-快速排序" class="headerlink" title="2.快速排序"></a>2.快速排序</h3><ul>
-<li><p>思路：采用了分治的思想，从一组元素中随机取一个枢轴元素pivot,经过一趟排序，将这组元素分为L[1,2,3…..k-1],L[k+1,k+2…..n],其中L[1,2,3….k-1]中的所有元素都小于pivot，L[k+1,k+2…..n]，然后再分别对这两组元素进行快速排序，最后得到一组有序的元素</p>
-</li>
-<li><p>具体方法: 我们一般把第一个元素作为枢轴元素，附设两个指针，i,j,分别指向low和high,将第一个元素的值赋给pivot,指针i指向第一个元素的位置low，指针j指向最后一个元素high，j从high开始往前找比pivot小的元素，找到之后将该元素交换到i的位置，然后从i 开始找比pivot大或等于pivot的元素，将其交换到j指针所指的位置，然后又开始从j开始找比pivot小的元素，交换到i的位置，一直重复，直到i==j时完成一趟遍历</p>
-</li>
-</ul>
-<blockquote>
-<p>Javascript代码：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*划分函数*&#x2F;</span><br><span class="line">const partition &#x3D; (var A[], var low, var high) &#x3D;&gt;&#123;</span><br><span class="line">    let pivot &#x3D; A[0];</span><br><span class="line">    while(low&lt; high)&#123;</span><br><span class="line">        while(low&lt;high &amp;&amp; A[high]&gt;&#x3D;pivot) high--;</span><br><span class="line">        A[low] &#x3D; A[high];</span><br><span class="line">        while(low&lt;high &amp;&amp; A[low]&lt;&#x3D;pivot) low++;</span><br><span class="line">        A[high] &#x3D; A[low];</span><br><span class="line">    &#125;</span><br><span class="line">    A[low] &#x3D; pivot;</span><br><span class="line">    return low;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;*递归*&#x2F;</span><br><span class="line">const quickSort(var A[], var low, var high)&#123;</span><br><span class="line">    if(low&lt;high)&#123;</span><br><span class="line">        let pivots &#x3D; partition(A,low,high);</span><br><span class="line">        quickSort(A,low,pivots-1);</span><br><span class="line">        quickSort(A,pivots+1,high);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul>
-<li><p>空间复杂度：最好情况下，只需要O(logn),最坏情况O(n),平均情况下为O(logn)</p>
-</li>
-<li><p>时间复杂度：取决于枢轴的元素，当枢轴元素刚好是所有元素的之间元素时时间复杂度最小为O(nlogn),最坏情况下为O(n^2),只不过好在其平均时间复杂度与最好的复杂度差不多，而不是接近其最差复杂度，所以其性能还是很优秀的</p>
-</li>
-</ul>
-
+<li><p>思路：将一组元素从后往前，依次与前面一个元素进行比较，如果后面的元素比前面的元素小，交换两个元素的位置，再让前面一个元素与其前面的元素进行比较，直到比到有序序列的最后的一个元素为止，每比较一趟都可以得到一个元素的最终为止，比较n-1趟即可打的一组有序的元...
           
+        </div>
         
-      
+        <div style="text-align:center;">
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/01/10/Sort2/">Read More</a>
+        </div>
+      </div>
+    </article>
+
+
+
+  <nav style="text-align: center;">
+    <div class="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="iconfont icon-angle-right"></i></a>
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
   </nav>
 
-
-
-          </div>
-          
-
-
-          
-
-        </div>
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2015 - 2021 
         
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        zys
+      </span>
     </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
+    <div class="mdui-row">
       
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name"></p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/%7C%7Carchive">
-              
-                  <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-
-          </nav>
-
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
         </div>
-      </section>
-
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
       
-
-      
-
     </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">zys</span>
-
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>Total Visitors <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>Total Views <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
   
-</div>
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
 
-
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
-
-
-
-
-        
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
 
 
 
-
-        
-      </div>
-    </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
+<script src="/js/mdui.min.v1.0.0.js"></script>
 
-    
 
-  </div>
 
-  
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
+<script src="/js/meadow.js"></script>
 
 </body>
-</html>
+</html >
