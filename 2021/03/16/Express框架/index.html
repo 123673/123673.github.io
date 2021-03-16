@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+
+    
+    
+        
+<link rel="stylesheet" href="/css/mdui.min.v1.0.0.css">
+
+    
+    
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+
+
+    
+    
+
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+        
+            Express框架 | 张彦书的blog
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">张彦书的blog</a>
+    <a href="/" class="header-subtitle mdui-typo-headline"></a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">Overview</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">About</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-1">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+            
+                
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">分类</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">Night Mode</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-1">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/image/avater.JPG"/>
+                
+            </div>
+            <div class="sidebar-author-name">zys</div>
+            <div class="sidebar-description">张彦书的博客</div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a target="_blank" rel="noopener" href="https://mail.163.com/" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a target="_blank" rel="noopener" href="https://github.com/123673" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-steam"></i></span>
+                    <a target="_blank" rel="noopener" href="https://store.steampowered.com/" class="mdui-chip-title">Steam</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-weibo"></i></span>
+                    <a target="_blank" rel="noopener" href="https://weibo.com/" class="mdui-chip-title">Weibo</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Links</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="/2021/03/16/Express%E6%A1%86%E6%9E%B6/">Express框架</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-03-16
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-03-16
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/Express%E6%A1%86%E6%9E%B6/">Express框架</a>
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        Views:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=Express框架&url=http://example.com/2021/03/16/Express%E6%A1%86%E6%9E%B6/&pic=http://example.com/null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">Share to Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=Express框架&url=http://example.com/2021/03/16/Express%E6%A1%86%E6%9E%B6/&via=zys" target="_blank" class="mdui-ripple">Share to Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2021/03/16/Express%E6%A1%86%E6%9E%B6/" target="_blank" class="mdui-ripple">Share to Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=http://example.com/2021/03/16/Express%E6%A1%86%E6%9E%B6/" target="_blank" class="mdui-ripple">Share to Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com/2021/03/16/Express%E6%A1%86%E6%9E%B6/&title=Express框架" target="_blank" class="mdui-ripple">Share to LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=张彦书的blog&title=Express框架&summary=张彦书的博客&pics=http://example.com/null&url=http://example.com/2021/03/16/Express%E6%A1%86%E6%9E%B6/" target="_blank" class="mdui-ripple">Share to QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=http://example.com/2021/03/16/Express%E6%A1%86%E6%9E%B6/&text=Express框架" target="_blank" class="mdui-ripple">Share to Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <h1 id="Express框架摘要："><a href="#Express框架摘要：" class="headerlink" title="Express框架摘要："></a>Express框架摘要：</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br></pre></td><td class="code"><pre><span class="line">Express框架：</span><br><span class="line">因为原生的nodeJS实现网站比较困难，于是就诞生了Express框架（Node的第三方模块）</span><br><span class="line">Express是一个基于Node平台的web应用开发框架，他提供了一系列的强大特性，使用更加简洁的代码帮助你构建各种web应用</span><br><span class="line">下载方式：</span><br><span class="line">npm install express</span><br><span class="line"></span><br><span class="line">Express框架特性：</span><br><span class="line">1.提供了简洁的路由定义方式</span><br><span class="line">2.对HTTP请求参数进行了简化处理</span><br><span class="line">3.对模板引擎支持度高，方便渲染HTML页面</span><br><span class="line">4.提供了中间件机制，有效控制HTTP请求</span><br><span class="line">5.拥有大量的第三方中间件对功能进行拓展</span><br><span class="line"></span><br><span class="line">Express框架的基本使用：</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;调用express框架</span><br><span class="line">const express &#x3D; require(&#39;express&#39;);</span><br><span class="line">&#x2F;&#x2F;创建网站服务器</span><br><span class="line">const app &#x3D; express();</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;创建路由：</span><br><span class="line">app.get(&#39;&#x2F;&#39;,(req,res) &#x3D;&gt;&#123;</span><br><span class="line">    &#x2F;&#x2F;send()方法的好处</span><br><span class="line">    &#x2F;&#x2F;1.会自动检测响应内容的类型</span><br><span class="line">    &#x2F;&#x2F;2.会自动设置HTTP的状态码</span><br><span class="line">    &#x2F;&#x2F;3.会自动设置响应内容的类型和编码</span><br><span class="line">    res.send(&#39;Hello Express&#39;);</span><br><span class="line">&#125;)</span><br><span class="line">app.get(&#39;&#x2F;list&#39;, (req,res) &#x3D;&gt;&#123;</span><br><span class="line">    res.send(&#123;name:&#39;z&#39;,age:&#39;22&#39;&#125;); &#x2F;&#x2F;send()可以直接传输对象格式</span><br><span class="line">&#125;)</span><br><span class="line">&#x2F;&#x2F;监听端口</span><br><span class="line">app.listen(3000);</span><br><span class="line">console.log(&#39;网站服务器启动成功&#39;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">2.中间件：中间件就是一堆方法，可以接受客户端发来的请求，对请求进行响应，也可以将请求继续交给下一个中间件继续处理</span><br><span class="line"></span><br><span class="line">中间件主要由两部分组成：中间件方法和处理函数</span><br><span class="line"></span><br><span class="line">中间件方法有Express提供，用于拦截客户端的请求，处理函数由开发人员提供，负责处理请求</span><br><span class="line">路由就是中间件：</span><br><span class="line"></span><br><span class="line">app.get(&#39;请求路径&#39;，&#39;处理函数&#39;) &#x2F;&#x2F;接收处理get请求</span><br><span class="line">app.post(&#39;请求路径&#39;，&#39;处理函数&#39;) &#x2F;&#x2F;接收处理post请求</span><br><span class="line">可以针对一个请求设置多个中间件，对一个请求作出多次处理</span><br><span class="line">但是默认情况下，请求从上至下一次匹配中间件，当匹配成功后，就终止匹配</span><br><span class="line">解决方法：可以使用next方法将请求的控制权转移给下一个之间件，直到遇到结束请求的中间件</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;调用express框架</span><br><span class="line">const express &#x3D; require(&#39;express&#39;);</span><br><span class="line">&#x2F;&#x2F;创建网站服务器</span><br><span class="line">const app &#x3D; express();</span><br><span class="line">&#x2F;&#x2F;监听端口</span><br><span class="line">app.get(&#39;&#x2F;request&#39;, (req,res,next) &#x3D;&gt; &#123;</span><br><span class="line">    req.name &#x3D; &#39;zhnag&#39;;</span><br><span class="line">    next(); &#x2F;&#x2F;将请求转移给下一个中间件</span><br><span class="line">&#125;)</span><br><span class="line">app.get(&#39;&#x2F;request&#39;, (req,res) &#x3D;&gt; &#123;</span><br><span class="line">    res.send(req.name);</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(3000);</span><br><span class="line">console.log(&#39;网站服务器启动成功&#39;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">3.app.use中间件用法：匹配所有的请求方式，可以直接传入请求处理函数，代表接收所有的请求</span><br><span class="line"></span><br><span class="line">app.use((req,res,next) &#x3D;&gt; &#123;&#125;);</span><br><span class="line"></span><br><span class="line">app.use第一个参数也可以传入请求地址，代表无论什么请求方式，只要是这个地址就接收这个请求</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;调用express框架</span><br><span class="line">const express &#x3D; require(&#39;express&#39;);</span><br><span class="line">&#x2F;&#x2F;创建网站服务器</span><br><span class="line">const app &#x3D; express();</span><br><span class="line"></span><br><span class="line">app.use((req,res,next) &#x3D;&gt;&#123;</span><br><span class="line">     console.log(&#39;这是use请求&#39;);</span><br><span class="line">     next()</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">app.get(&#39;&#x2F;request&#39;, (req,res,next) &#x3D;&gt; &#123;</span><br><span class="line">    req.name &#x3D; &#39;zhnag&#39;;</span><br><span class="line">    next(); &#x2F;&#x2F;将请求转移给下一个中间件</span><br><span class="line">&#125;)</span><br><span class="line">app.get(&#39;&#x2F;request&#39;, (req,res) &#x3D;&gt; &#123;</span><br><span class="line">    res.send(req.name);</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(3000);</span><br><span class="line">console.log(&#39;网站服务器启动成功&#39;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">4.中间件应用：</span><br><span class="line">      1.路由保护，客户端在访问需要登录的页面时，先使用中间件判断用户登录状态，如果未登录，则拦截请求直接响应，禁止用户接入需要登录的界面</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;调用express框架</span><br><span class="line">const express &#x3D; require(&#39;express&#39;);</span><br><span class="line">&#x2F;&#x2F;创建网站服务器</span><br><span class="line">const app &#x3D; express();</span><br><span class="line"></span><br><span class="line">app.use(&#39;&#x2F;admin&#39;,(req,res,next) &#x3D;&gt;&#123;</span><br><span class="line">    let isLogin &#x3D; true;</span><br><span class="line">    if(isLogin)&#123;</span><br><span class="line">        next()</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        res.send(&#39;您还未登录，不能访问这个界面&#39;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line">app.get(&#39;&#x2F;admin&#39;,(req,res,next) &#x3D;&gt;&#123;</span><br><span class="line">    res.send(&#39;您已登录，可以访问admin&#39;)</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(3000);</span><br><span class="line">console.log(&#39;网站服务器启动成功&#39;);</span><br><span class="line"></span><br><span class="line">2.网站维护公告：在所有的路由最上面定义接收所有请求的中间件，直接为客户端作出响应网站正在维护中</span><br><span class="line"></span><br><span class="line">app.use((req,res,next) &#x3D;&gt;&#123;</span><br><span class="line">    res.send(&#39;当前网站正在维护.......&#39;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">app.use(&#39;&#x2F;admin&#39;,(req,res,next) &#x3D;&gt;&#123;</span><br><span class="line">    let isLogin &#x3D; true;</span><br><span class="line">    if(isLogin)&#123;</span><br><span class="line">        next()</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        res.send(&#39;您还未登录，不能访问这个界面&#39;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">3.自定义404界面：在所有界面的后面定义中间件即可</span><br><span class="line"></span><br><span class="line">res.status(404)  &#x2F;&#x2F;设置状态码</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">4.错误处理中间件：是一个集中处理错误的地方</span><br><span class="line">当程序出现错误之后，错误处理中间件会自动执行</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">const express &#x3D; require(&#39;express&#39;);</span><br><span class="line">const app &#x3D; express();</span><br><span class="line"></span><br><span class="line">app.get(&#39;&#x2F;index&#39;,(req,res) &#x3D;&gt;&#123;</span><br><span class="line">    throw new Error(&#39;程序出现了未知错误&#39;);</span><br><span class="line">&#125;)</span><br><span class="line">&#x2F;&#x2F;程序出现错误会自动执行事件错误处理中间件</span><br><span class="line">app.use((err,req,res,next) &#x3D;&gt; &#123;</span><br><span class="line">    res.status(500).send(err.message);</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(3000);</span><br><span class="line">console.log(&#39;服务器已启动&#39;);</span><br></pre></td></tr></table></figure>
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/2021/03/14/es6/">
+        <span>es6</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/2021/03/16/Express%E6%A1%86%E6%9E%B6/" id="toc-header" class="mdui-ripple">Table of Contents</a>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Express%E6%A1%86%E6%9E%B6%E6%91%98%E8%A6%81%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">Express框架摘要：</span></a></li></ol>
+      </li>
+    </ul>
+  </div>
+
+
+
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
+        
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+          <a href="#comment-tab1" class="mdui-ripple">livere</a>
+        
+      </div>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+        <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="lv-container" data-id="city" data-uid="">
+  <script type="text/javascript">
+    (function (d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
+</div>
+        </div>
+      
+    </div>
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2015 - 2021 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        zys
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>Total Visitors <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>Total Views <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
+    
+<script src="/js/mdui.min.v1.0.0.js"></script>
+
+
+
+
+<script src="/js/meadow.js"></script>
+
+</body>
+</html >
