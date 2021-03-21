@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+
+    
+    
+        
+<link rel="stylesheet" href="/css/mdui.min.v1.0.0.css">
+
+    
+    
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+
+
+    
+    
+
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+        
+            Ajax复习 | 张彦书的blog
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">张彦书的blog</a>
+    <a href="/" class="header-subtitle mdui-typo-headline"></a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">Overview</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">About</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-1">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+            
+                
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">分类</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">Night Mode</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-1">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/image/avater.JPG"/>
+                
+            </div>
+            <div class="sidebar-author-name">zys</div>
+            <div class="sidebar-description">张彦书的博客</div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a target="_blank" rel="noopener" href="https://mail.163.com/" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a target="_blank" rel="noopener" href="https://github.com/123673" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-steam"></i></span>
+                    <a target="_blank" rel="noopener" href="https://store.steampowered.com/" class="mdui-chip-title">Steam</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-weibo"></i></span>
+                    <a target="_blank" rel="noopener" href="https://weibo.com/" class="mdui-chip-title">Weibo</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Links</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="/2021/03/21/Ajax%E5%A4%8D%E4%B9%A0/">Ajax复习</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-03-21
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-03-21
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/Ajax/">Ajax</a>
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        Views:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=Ajax复习&url=http://example.com/2021/03/21/Ajax%E5%A4%8D%E4%B9%A0/&pic=http://example.com/null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">Share to Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=Ajax复习&url=http://example.com/2021/03/21/Ajax%E5%A4%8D%E4%B9%A0/&via=zys" target="_blank" class="mdui-ripple">Share to Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2021/03/21/Ajax%E5%A4%8D%E4%B9%A0/" target="_blank" class="mdui-ripple">Share to Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=http://example.com/2021/03/21/Ajax%E5%A4%8D%E4%B9%A0/" target="_blank" class="mdui-ripple">Share to Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com/2021/03/21/Ajax%E5%A4%8D%E4%B9%A0/&title=Ajax复习" target="_blank" class="mdui-ripple">Share to LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=张彦书的blog&title=Ajax复习&summary=张彦书的博客&pics=http://example.com/null&url=http://example.com/2021/03/21/Ajax%E5%A4%8D%E4%B9%A0/" target="_blank" class="mdui-ripple">Share to QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=http://example.com/2021/03/21/Ajax%E5%A4%8D%E4%B9%A0/&text=Ajax复习" target="_blank" class="mdui-ripple">Share to Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <h1 id="Ajax复习：学习新知识的同时，也要抽出时间来复习啊，不然又要花更多时间去重新学习，感觉Ajax快要忘完了，所以这篇博客就诞生了"><a href="#Ajax复习：学习新知识的同时，也要抽出时间来复习啊，不然又要花更多时间去重新学习，感觉Ajax快要忘完了，所以这篇博客就诞生了" class="headerlink" title="Ajax复习：学习新知识的同时，也要抽出时间来复习啊，不然又要花更多时间去重新学习，感觉Ajax快要忘完了，所以这篇博客就诞生了-_-"></a>Ajax复习：学习新知识的同时，也要抽出时间来复习啊，不然又要花更多时间去重新学习，感觉Ajax快要忘完了，所以这篇博客就诞生了-_-</h1><h2 id="1-什么是Ajax"><a href="#1-什么是Ajax" class="headerlink" title="1.什么是Ajax?"></a>1.什么是Ajax?</h2><p>既然复习Ajax，那么问题来了，Ajax是什么呢？一般这种字母很少的技术的名字都是某些单词的缩写，Ajax也不例外：Ajax完整的名字是：Asynchronous JavaScript and XML，翻译过来就是异步的JavaScript和xml, 也可读阿贾克斯，反正只要能听得懂，你想怎么读都可以</p>
+<h2 id="2-Ajax有什么用？我们为什么要使用它"><a href="#2-Ajax有什么用？我们为什么要使用它" class="headerlink" title="2.Ajax有什么用？我们为什么要使用它?"></a>2.Ajax有什么用？我们为什么要使用它?</h2><ul>
+<li>异步操作，在传统的网站，用户从浏览器向服务器发送请求，在等待服务响应期间，用户只能等待，不能去做其他事情，但是Ajax可以让用户在浏览器发送请求与服务器交互期间也能继续操作页面，提高了用户的体验</li>
+<li>进行局部页面刷新，以前的web网站与服务器交换数据需要将表单中的全部数据一起提交到服务器，然后服务器返回一个新的表单，如果表单数据不正确，这时候用户就需要重新填写表单的所有内容，即使是没有出错 内容也需要重新填写，而ajax不需要用户提交整个表单，浏览器会通过XMLHTTPRquest()对象向服务器进行局部的数据交换，进行局部页面的刷新，不需要刷新整个页面</li>
+<li>使用ajax技术可以减轻服务器带宽压力，服务器可以将一些数据处理放到浏览器执行，充分使用浏览器的闲置性能，减轻服务器的负担</li>
+</ul>
+<p>难道ajax就这么完美，没什么缺点吗？</p>
+<p>那当然是不可能的，ajax也存在一些问题，比如说，使用ajax技术刷新的页面不会出现在浏览记录之中，也就是不支持浏览器的回退操作，因为浏览器的浏览记录只会记录静态页面，而使用ajax修改过数据的页面与之前的页面之间的差别微妙，浏览器不会将局部数据刷新的页面放到浏览器的浏览记录之中，因此使用回退操作也无法回到局部刷新之前的页面</p>
+<h2 id="Ajax怎么实现？"><a href="#Ajax怎么实现？" class="headerlink" title="Ajax怎么实现？"></a>Ajax怎么实现？</h2><p>上面提到ajax的优点时提到了XMLHTTPRquest()对象，我们就是通过创建这个对象的实例来实现ajax</p>
+<p>ajax实现代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;创建XMLHttpRequest对象实例</span><br><span class="line">var xhr &#x3D; new XMLHttpRequest();</span><br><span class="line">&#x2F;&#x2F;配置ajax</span><br><span class="line">xhr.open(&#39;请求方式&#39;，&#39;请求地址&#39;);</span><br><span class="line">&#x2F;&#x2F; 如：xhr(&#39;post&#39;, &#39;http:localhost:3000&#x2F;index&#39;);</span><br><span class="line"></span><br><span class="line">&#x2F;* 注：</span><br><span class="line">   发送ajax对象参数,不同的请求方式发送的数据参数不同，get请求的open为空,post请求不为空，当post请求参数类型为 application&#x2F;x-www-form-urlencoded 时将参数转换为属性加值多个属性之间用&amp;连接的形式发送到服务器，如name&#x3D;zhangsan&amp;age&#x3D;22这种格式，如果post请求参数类型为application&#x2F;json 也就是json类型的参数，则使用JSON.stringify()将json格式的参数转换为json字符串格式再发送到服务器端，而服务器端则使用JSON.parse()方法再将json字符串转换为json对象的格式方便使用</span><br><span class="line">*&#x2F;</span><br><span class="line">xhr.send(param);</span><br><span class="line">&#x2F;&#x2F;处理服务器端返回的数据：使用xhr的onload事件，获取服务器端的数据并处理</span><br><span class="line">xhr.onload &#x3D; function()&#123;</span><br><span class="line">    &#x2F;&#x2F;在控制台打印服务器返回的数据</span><br><span class="line">    console.log(xhr.responseText);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>上面代码就实现了一个初步的ajax，我们可以对他进行完善，比如处理传入的参数，获取到服务器端的数据之后的处理函数等，为了方便使用和防止每次使用ajax都要重新创建的问题，我们接下来将ajax封装在一个函数中，我们可以通过调用这个ajax函数和传入想要处理的数据来使用ajax<br>//ajax函数的参数是一个对象，因为对象获取数据方便</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">function ajax(options)&#123;</span><br><span class="line">    var xhr &#x3D; new XMLHttpRequest(); &#x2F;&#x2F;创建XMLHttpRequest()对象</span><br><span class="line">    &#x2F;&#x2F;设置ajax()函数的默认参数</span><br><span class="line">    var defaults &#x3D; &#123;</span><br><span class="line">        type &#x3D; &#39;get&#39;,  &#x2F;&#x2F;默认请求方式为get</span><br><span class="line">        url:&#39;&#39;,  &#x2F;&#x2F;默认请求地址为空</span><br><span class="line">        data: &#123;&#125;,  &#x2F;&#x2F;默认请求参数为空</span><br><span class="line">        header:&#123;</span><br><span class="line">            &#x2F;&#x2F;设置默认的请求参数类型为&#39;Content-Type&#39;:&#39;application&#x2F;x-www-form-urlencoded&#39;</span><br><span class="line">            &#39;Content-Type&#39;:&#39;application&#x2F;x-www-form-urlencoded&#39;</span><br><span class="line">        &#125;,</span><br><span class="line">        success:function()&#123;&#125; &#x2F;&#x2F;请求成功之后的处理函数</span><br><span class="line">        error:function()&#123;&#125;  &#x2F;&#x2F;请求出错后的处理函数</span><br><span class="line">    &#125;</span><br><span class="line">    &#x2F;&#x2F;将传入的参数覆盖默认参数</span><br><span class="line">    Object.assign(defaults, options);</span><br><span class="line">    var param &#x3D; &#39;&#39;;</span><br><span class="line">    for(k in defaults.data)&#123;</span><br><span class="line">        param +&#x3D; &#39;?&#39; + k + &#39;&#x3D;&#39; +defaults.data[k] + &#39;&amp;&#39;;</span><br><span class="line">    &#125;</span><br><span class="line">    param &#x3D; param.substr(0,param.length-1);</span><br><span class="line">    if(defaults.type &#x3D;&#x3D; &#39;get&#39;)&#123;</span><br><span class="line">        defaults.url +&#x3D; param;</span><br><span class="line">    &#125;</span><br><span class="line">    &#x2F;&#x2F;传递请求方式和请求地址</span><br><span class="line">    xhr.open(defaults.type, defaults.url);</span><br><span class="line">    if(defaults.type &#x3D;&#x3D; &#39;post&#39;)&#123;</span><br><span class="line">         var contentType &#x3D; defaults.header[&#39;Content-Type&#39;];</span><br><span class="line">         xhr.setRequestHeader(&#39;Content-Type&#39;,contentType);</span><br><span class="line">         var request &#x3D; defaults.data;</span><br><span class="line">         if(contentType &#x3D;&#x3D; &#39;application&#x2F;json&#39;)&#123;</span><br><span class="line">             request &#x3D; JSON.stringify(request);</span><br><span class="line">             xhr.send(request);</span><br><span class="line">         &#125;else&#123;</span><br><span class="line">             xhr.send(param);</span><br><span class="line">         &#125;</span><br><span class="line">         </span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        xhr.send();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    xhr.onload &#x3D; function()&#123;</span><br><span class="line">        var contentType &#x3D; xhr.getResponseHeader(&#39;Content-Type&#39;);</span><br><span class="line">        var responseText &#x3D; xhr.responseText();</span><br><span class="line">        if(contentType.includes(&#39;application&#x2F;json&#39;))&#123;</span><br><span class="line">            responseText &#x3D; JSON.parse(responseText);</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;&#x2F;请求成功，调用成功处理函数</span><br><span class="line">        if(xhr.status &#x3D;&#x3D; 200)&#123;</span><br><span class="line">            defaults.success(responseText);</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            &#x2F;&#x2F;请求失败，调用失败函数</span><br><span class="line">            defaults.error(responseText);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>ajax函数调用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ajax(&#123;</span><br><span class="line">        type:&#39;post&#39;,</span><br><span class="line">        url:&#39;http:&#x2F;&#x2F;localhost:3000&#x2F;index&#39;,</span><br><span class="line">        data:&#123;</span><br><span class="line">            name:&#39;zhang&#39;,</span><br><span class="line">            age:22</span><br><span class="line">        &#125;,</span><br><span class="line">        header:&#123;</span><br><span class="line">            &#39;Content-Type&#39;:&#39;application&#x2F;json&#39;</span><br><span class="line">        &#125;,</span><br><span class="line">        success:function(val)&#123;console.log(val)&#125;,</span><br><span class="line">        error:function(val)&#123;console.log(val)&#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>ajax函数其实有第三方的库，jQuery框架里面给我们封装了一个$.ajax()，用法与我们自己封装的ajax函数差不多</p>
+
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/2021/03/16/Express%E6%A1%86%E6%9E%B6/">
+        <span>Express框架</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/2021/03/21/Ajax%E5%A4%8D%E4%B9%A0/" id="toc-header" class="mdui-ripple">Table of Contents</a>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Ajax%E5%A4%8D%E4%B9%A0%EF%BC%9A%E5%AD%A6%E4%B9%A0%E6%96%B0%E7%9F%A5%E8%AF%86%E7%9A%84%E5%90%8C%E6%97%B6%EF%BC%8C%E4%B9%9F%E8%A6%81%E6%8A%BD%E5%87%BA%E6%97%B6%E9%97%B4%E6%9D%A5%E5%A4%8D%E4%B9%A0%E5%95%8A%EF%BC%8C%E4%B8%8D%E7%84%B6%E5%8F%88%E8%A6%81%E8%8A%B1%E6%9B%B4%E5%A4%9A%E6%97%B6%E9%97%B4%E5%8E%BB%E9%87%8D%E6%96%B0%E5%AD%A6%E4%B9%A0%EF%BC%8C%E6%84%9F%E8%A7%89Ajax%E5%BF%AB%E8%A6%81%E5%BF%98%E5%AE%8C%E4%BA%86%EF%BC%8C%E6%89%80%E4%BB%A5%E8%BF%99%E7%AF%87%E5%8D%9A%E5%AE%A2%E5%B0%B1%E8%AF%9E%E7%94%9F%E4%BA%86"><span class="toc-number">1.</span> <span class="toc-text">Ajax复习：学习新知识的同时，也要抽出时间来复习啊，不然又要花更多时间去重新学习，感觉Ajax快要忘完了，所以这篇博客就诞生了-_-</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AFAjax"><span class="toc-number">1.1.</span> <span class="toc-text">1.什么是Ajax?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Ajax%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8%EF%BC%9F%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8%E5%AE%83"><span class="toc-number">1.2.</span> <span class="toc-text">2.Ajax有什么用？我们为什么要使用它?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ajax%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%EF%BC%9F"><span class="toc-number">1.3.</span> <span class="toc-text">Ajax怎么实现？</span></a></li></ol></li></ol>
+      </li>
+    </ul>
+  </div>
+
+
+
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
+        
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+          <a href="#comment-tab1" class="mdui-ripple">livere</a>
+        
+      </div>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+        <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="lv-container" data-id="city" data-uid="">
+  <script type="text/javascript">
+    (function (d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
+</div>
+        </div>
+      
+    </div>
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2015 - 2021 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        zys
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>Total Visitors <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>Total Views <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
+    
+<script src="/js/mdui.min.v1.0.0.js"></script>
+
+
+
+
+<script src="/js/meadow.js"></script>
+
+</body>
+</html >
