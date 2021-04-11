@@ -262,6 +262,49 @@
       
       
         <div class="post-header"> 
+  <a class="post-header-title" href="/2021/04/10/Js%E7%9A%84Array%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/">Js的Array对象方法总结</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-04-10
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-04-11
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/Js/">Js</a>
+    </span>
+    
+  </div>
+</div>   
+    
+
+
+
+      
+      
+  <div class="tag-line-space"></div>
+
+      
+      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
+        <div class="post-abstract mdui-typo ">
+          
+            <h2 id="数组操作在JS中是十分关键的部分，所以有必要知道数组都有哪些方法，所以在这里做个小结："><a href="#数组操作在JS中是十分关键的部分，所以有必要知道数组都有哪些方法，所以在这里做个小结：" class="headerlink" title="数组操作在JS中是十分关键的部分，所以有必要知道数组都有哪些方法，所以在这里做个小结："></a>数组操作在JS中是十分关键的部分，所以有必要知道数组都有哪些方法，所以在这里做个小结：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;创建数组</span><br><span class="line">var arr &#x3D; [];</span><br><span class="line">var arr &#x3D; new Array();</span><br></pre></td></tr></table></figure>
+          
+        </div>
+        
+        <div style="text-align:center;">
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/04/10/Js%E7%9A%84Array%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/">Read More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
+      
+      
+        <div class="post-header"> 
   <a class="post-header-title" href="/2021/04/07/ajax%E5%B0%8F%E7%BB%93/">ajax小结</a>
   <div class="post-header-meta">
     <span>
@@ -641,49 +684,6 @@
         
         <div style="text-align:center;">
           <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/03/10/node3/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/2021/03/09/node2/">node2</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-03-09
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2021-03-14
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;<a class="category-link" href="/categories/Node/">Node</a>
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <h1 id="1-Node服务器搭建"><a href="#1-Node服务器搭建" class="headerlink" title="1.Node服务器搭建"></a>1.Node服务器搭建</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">服务器搭建步骤：</span><br><span class="line">1.导入http模块</span><br><span class="line">2.使用createSever()创建服务器站点</span><br><span class="line">3.绑定客户端请求事件</span><br><span class="line">4.监听端口</span><br><span class="line">5.使用服务器端口访问服务器</span><br><span class="line"></span><br><span class="line">例：</span><br><span class="line">&#x2F;&#x2F;导入http模块</span><br><span class="line">const http  &#x3D; require(&#39;http&#39;);</span><br><span class="line">&#x2F;&#x2F;创建服务器站点</span><br><span class="line">const app &#x3D; http.createServer();</span><br><span class="line">&#x2F;&#x2F;绑定客户端请求事件</span><br><span class="line">app.on(&#39;request&#39;,(req,res) &#x3D;&gt; &#123;</span><br><span class="line">    &#x2F;&#x2F;将返回的文档类型设置为HTML格式同时返回200状态码和设置编码方式为UTF8；</span><br><span class="line">    &#x2F;&#x2F;不设置utf8编码，中文会显示为乱码</span><br><span class="line">    res.writeHead(200,&#123;&#39;content-type&#39;:&#39;text&#x2F;html;charset&#x3D;utf8&#39;&#125;);</span><br><span class="line">    res.end(&#39;&lt;h2&gt;欢迎访问node服务器&lt;&#x2F;h2&gt;&#39;);</span><br><span class="line">&#125;)</span><br><span class="line">&#x2F;&#x2F;监听3000端口</span><br><span class="line">app.listen(3000);</span><br><span class="line">console.log(&#39;服务器启动成功&#39;);</span><br><span class="line"></span><br><span class="line">运行结果：</span><br></pre></td></tr></table></figure>
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/03/09/node2/">Read More</a>
         </div>
       </div>
     </article>
