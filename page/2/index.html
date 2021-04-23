@@ -262,6 +262,49 @@
       
       
         <div class="post-header"> 
+  <a class="post-header-title" href="/2021/03/10/node3/">node3</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-03-10
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-03-14
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/Node/">Node</a>
+    </span>
+    
+  </div>
+</div>   
+    
+
+
+
+      
+      
+  <div class="tag-line-space"></div>
+
+      
+      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
+        <div class="post-abstract mdui-typo ">
+          
+            <h1 id="1-Node服务器-GET参数的获取：GET参数被放置在浏览器的请求地址中"><a href="#1-Node服务器-GET参数的获取：GET参数被放置在浏览器的请求地址中" class="headerlink" title="1.Node服务器 GET参数的获取：GET参数被放置在浏览器的请求地址中"></a>1.Node服务器 GET参数的获取：GET参数被放置在浏览器的请求地址中</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">GET参数获取步骤：</span><br><span class="line">1.通过req.url获取请求地址</span><br><span class="line">2.导入URL模块，使用url模块将获取到的地址转换为一个对象，url会将地址的各个部分放到对象的属性里面，GET参数在其中的query属性中，此时query是一个字符串，而不是我们想要的对象</span><br><span class="line">3.使用yrl.parse(req.url,true)将字符串query转换为对象，就可获得GET的参数</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">代码：</span><br><span class="line">&#x2F;&#x2F;访问地址为：http:&#x2F;&#x2F;localhost:3000&#x2F;?name&#x3D;zys&amp;age&#x3D;22</span><br><span class="line">&#x2F;&#x2F;?后面开始传参</span><br><span class="line">const http &#x3D; require(&#39;http&#39;);</span><br><span class="line">const &#123; allowedNodeEnvironmentFlags &#125; &#x3D; require(&#39;process&#39;);</span><br><span class="line">&#x2F;&#x2F; const &#123; url &#125; &#x3D; require(&#39;inspector&#39;);</span><br><span class="line">const url &#x3D; require(&#39;url&#39;);</span><br><span class="line">const app &#x3D; http.createServer();</span><br><span class="line">app.on(&#39;request&#39;,(req,res) &#x3D;&gt; &#123;</span><br><span class="line">      res.writeHead(200,&#123;&#39;content-type&#39;:&#39;text&#x2F;html;charset&#x3D;utf8&#39;&#125;);</span><br><span class="line">      let para &#x3D; url.parse(req.url,true).query;</span><br><span class="line">      let name &#x3D; para.name;</span><br><span class="line">      let age &#x3D; para.age;</span><br><span class="line">      console.log(para);</span><br><span class="line">      res.end(&#39;GET的name为:&#39;+name +&#39;&lt;br&#x2F;&gt;&#39; + &#39;GET的age为:&#39;+age);</span><br><span class="line">      </span><br><span class="line">&#125;)</span><br><span class="line">app.listen(3000);</span><br><span class="line">console.log(&#39;服务器启动成功&#39;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+          
+        </div>
+        
+        <div style="text-align:center;">
+          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/03/10/node3/">Read More</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
+      
+      
+        <div class="post-header"> 
   <a class="post-header-title" href="/2021/03/09/node2/">node2</a>
   <div class="post-header-meta">
     <span>
@@ -663,49 +706,6 @@
         
         <div style="text-align:center;">
           <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/01/06/Mincoins/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/2021/01/06/article/">article</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-01-06
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2021-03-14
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2021/01/06/article/">Read More</a>
         </div>
       </div>
     </article>
