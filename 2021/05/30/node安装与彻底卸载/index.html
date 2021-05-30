@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+
+    
+    
+        
+<link rel="stylesheet" href="/css/mdui.min.v1.0.0.css">
+
+    
+    
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+
+
+    
+    
+
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+        
+            node安装与彻底卸载 | 张彦书的blog
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">张彦书的blog</a>
+    <a href="/" class="header-subtitle mdui-typo-headline"></a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">Overview</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">About</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-1">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+            
+                
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">分类</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">Night Mode</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-1">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/image/avater.JPG"/>
+                
+            </div>
+            <div class="sidebar-author-name">zys</div>
+            <div class="sidebar-description">张彦书的博客</div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a target="_blank" rel="noopener" href="https://mail.163.com/" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a target="_blank" rel="noopener" href="https://github.com/123673" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-steam"></i></span>
+                    <a target="_blank" rel="noopener" href="https://store.steampowered.com/" class="mdui-chip-title">Steam</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-weibo"></i></span>
+                    <a target="_blank" rel="noopener" href="https://weibo.com/" class="mdui-chip-title">Weibo</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Links</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/">node安装与彻底卸载</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2021-05-30
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2021-05-30
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="/categories/Node/">Node</a>
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        Views:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=node安装与彻底卸载&url=http://example.com/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/&pic=http://example.com/null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">Share to Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=node安装与彻底卸载&url=http://example.com/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/&via=zys" target="_blank" class="mdui-ripple">Share to Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/" target="_blank" class="mdui-ripple">Share to Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=http://example.com/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/" target="_blank" class="mdui-ripple">Share to Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/&title=node安装与彻底卸载" target="_blank" class="mdui-ripple">Share to LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=张彦书的blog&title=node安装与彻底卸载&summary=张彦书的博客&pics=http://example.com/null&url=http://example.com/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/" target="_blank" class="mdui-ripple">Share to QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=http://example.com/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/&text=node安装与彻底卸载" target="_blank" class="mdui-ripple">Share to Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <h2 id="Node的安装与卸载对于刚接触这方面开发的新手来说有着许多大坑，本人也踩过很多坑，解决起来非常费时间，所以我了一下总结安装与卸载的注意事项："><a href="#Node的安装与卸载对于刚接触这方面开发的新手来说有着许多大坑，本人也踩过很多坑，解决起来非常费时间，所以我了一下总结安装与卸载的注意事项：" class="headerlink" title="Node的安装与卸载对于刚接触这方面开发的新手来说有着许多大坑，本人也踩过很多坑，解决起来非常费时间，所以我了一下总结安装与卸载的注意事项："></a>Node的安装与卸载对于刚接触这方面开发的新手来说有着许多大坑，本人也踩过很多坑，解决起来非常费时间，所以我了一下总结安装与卸载的注意事项：</h2><h3 id="1-安装教程"><a href="#1-安装教程" class="headerlink" title="1. 安装教程"></a>1. 安装教程</h3><h4 id="安装的版本最好选择自带npm版本为6-xx的，我安装的版本是12-18-3-它自带的npm的版本为-6-14-6，因为npm7-xx版本在后面开发时安装模块会出现很多问题，导致不能安装，所以最好安装6-xx版本的npm，电脑用户文件夹最好为英文，否则以后运行项目时会找不到模块的路径，因为系统识别不了中文路径"><a href="#安装的版本最好选择自带npm版本为6-xx的，我安装的版本是12-18-3-它自带的npm的版本为-6-14-6，因为npm7-xx版本在后面开发时安装模块会出现很多问题，导致不能安装，所以最好安装6-xx版本的npm，电脑用户文件夹最好为英文，否则以后运行项目时会找不到模块的路径，因为系统识别不了中文路径" class="headerlink" title="安装的版本最好选择自带npm版本为6.xx的，我安装的版本是12.18.3 它自带的npm的版本为 6.14.6，因为npm7.xx版本在后面开发时安装模块会出现很多问题，导致不能安装，所以最好安装6.xx版本的npm，电脑用户文件夹最好为英文，否则以后运行项目时会找不到模块的路径，因为系统识别不了中文路径"></a>安装的版本最好选择自带npm版本为6.xx的，我安装的版本是12.18.3 它自带的npm的版本为 6.14.6，因为npm7.xx版本在后面开发时安装模块会出现很多问题，导致不能安装，所以最好安装6.xx版本的npm，电脑用户文件夹最好为英文，否则以后运行项目时会找不到模块的路径，因为系统识别不了中文路径</h4><ul>
+<li>进入nodejs.org网站<br><img src="/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/download1.png" alt="DW"></li>
+<li>点击downloads进入下载界面<br><img src="/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/download2.png" alt="DW"></li>
+<li>向下翻可下载所有以前发布过的版本，选择Previous Releases<br><img src="/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/download3.png" alt="DW"></li>
+<li>之后选择想要安装的版本，我们这里选择12.18.3版本<br><img src="/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/download4.png" alt="DW"></li>
+<li>我们下载msi格式的文件即可（64位系统，如果是32位系统选择x84那个版本）<br><img src="/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/download5.png" alt="DW"><br>下载好后，找到下载的文件的位置，双击开始安装，点击下一步下一步即可<br><img src="/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/download6.png" alt="DW"><br><img src="/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/download7.png" alt="DW"><br>安装好之后，进入命令行输入 node -v和npm -v 查看安装的版本，如果显示版本号则证明安装成功<br><img src="/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/download8.png" alt="DW"></li>
+</ul>
+<h3 id="2-彻底卸载教程：因为各种情况想要重新安装node时需要将原来的node全部卸载，卸载不干净会导致后续node的安装和使用出现各种错误"><a href="#2-彻底卸载教程：因为各种情况想要重新安装node时需要将原来的node全部卸载，卸载不干净会导致后续node的安装和使用出现各种错误" class="headerlink" title="2. 彻底卸载教程：因为各种情况想要重新安装node时需要将原来的node全部卸载，卸载不干净会导致后续node的安装和使用出现各种错误"></a>2. 彻底卸载教程：因为各种情况想要重新安装node时需要将原来的node全部卸载，卸载不干净会导致后续node的安装和使用出现各种错误</h3><ul>
+<li>首先进入控制面板中的卸载程序界面将nodejs删除<br><img src="/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/download9.png" alt="DW"></li>
+<li>然后删除npm文件，npm文件的默认路径为C:\Users\zhang\AppData\Roaming，其中AppData是隐藏文件，记住将电脑中的隐藏文件调为显示，然后删除npm 和npm-cache<br><img src="/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/download10.png" alt="DW"></li>
+<li>删除nodejs，路径一般为C:\Program Files\nodejs，如果找不到可在命令行中输入where node查看位置<br><img src="/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/download11.png" alt="DW"></li>
+<li>然后再命令行中输入node 指令，如果显示，node不是内部或外部命令，也不是可运行的程序<br>或批处理文件。说明删除成功，即可重新安装node</li>
+</ul>
+
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/2021/04/23/js%E6%89%8B%E5%86%99/">
+        <span>js手写</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/2021/05/30/node%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD/" id="toc-header" class="mdui-ripple">Table of Contents</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD%E5%AF%B9%E4%BA%8E%E5%88%9A%E6%8E%A5%E8%A7%A6%E8%BF%99%E6%96%B9%E9%9D%A2%E5%BC%80%E5%8F%91%E7%9A%84%E6%96%B0%E6%89%8B%E6%9D%A5%E8%AF%B4%E6%9C%89%E7%9D%80%E8%AE%B8%E5%A4%9A%E5%A4%A7%E5%9D%91%EF%BC%8C%E6%9C%AC%E4%BA%BA%E4%B9%9F%E8%B8%A9%E8%BF%87%E5%BE%88%E5%A4%9A%E5%9D%91%EF%BC%8C%E8%A7%A3%E5%86%B3%E8%B5%B7%E6%9D%A5%E9%9D%9E%E5%B8%B8%E8%B4%B9%E6%97%B6%E9%97%B4%EF%BC%8C%E6%89%80%E4%BB%A5%E6%88%91%E4%BA%86%E4%B8%80%E4%B8%8B%E6%80%BB%E7%BB%93%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">Node的安装与卸载对于刚接触这方面开发的新手来说有着许多大坑，本人也踩过很多坑，解决起来非常费时间，所以我了一下总结安装与卸载的注意事项：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B"><span class="toc-number">1.1.</span> <span class="toc-text">1. 安装教程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E7%9A%84%E7%89%88%E6%9C%AC%E6%9C%80%E5%A5%BD%E9%80%89%E6%8B%A9%E8%87%AA%E5%B8%A6npm%E7%89%88%E6%9C%AC%E4%B8%BA6-xx%E7%9A%84%EF%BC%8C%E6%88%91%E5%AE%89%E8%A3%85%E7%9A%84%E7%89%88%E6%9C%AC%E6%98%AF12-18-3-%E5%AE%83%E8%87%AA%E5%B8%A6%E7%9A%84npm%E7%9A%84%E7%89%88%E6%9C%AC%E4%B8%BA-6-14-6%EF%BC%8C%E5%9B%A0%E4%B8%BAnpm7-xx%E7%89%88%E6%9C%AC%E5%9C%A8%E5%90%8E%E9%9D%A2%E5%BC%80%E5%8F%91%E6%97%B6%E5%AE%89%E8%A3%85%E6%A8%A1%E5%9D%97%E4%BC%9A%E5%87%BA%E7%8E%B0%E5%BE%88%E5%A4%9A%E9%97%AE%E9%A2%98%EF%BC%8C%E5%AF%BC%E8%87%B4%E4%B8%8D%E8%83%BD%E5%AE%89%E8%A3%85%EF%BC%8C%E6%89%80%E4%BB%A5%E6%9C%80%E5%A5%BD%E5%AE%89%E8%A3%856-xx%E7%89%88%E6%9C%AC%E7%9A%84npm%EF%BC%8C%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E6%96%87%E4%BB%B6%E5%A4%B9%E6%9C%80%E5%A5%BD%E4%B8%BA%E8%8B%B1%E6%96%87%EF%BC%8C%E5%90%A6%E5%88%99%E4%BB%A5%E5%90%8E%E8%BF%90%E8%A1%8C%E9%A1%B9%E7%9B%AE%E6%97%B6%E4%BC%9A%E6%89%BE%E4%B8%8D%E5%88%B0%E6%A8%A1%E5%9D%97%E7%9A%84%E8%B7%AF%E5%BE%84%EF%BC%8C%E5%9B%A0%E4%B8%BA%E7%B3%BB%E7%BB%9F%E8%AF%86%E5%88%AB%E4%B8%8D%E4%BA%86%E4%B8%AD%E6%96%87%E8%B7%AF%E5%BE%84"><span class="toc-number">1.1.1.</span> <span class="toc-text">安装的版本最好选择自带npm版本为6.xx的，我安装的版本是12.18.3 它自带的npm的版本为 6.14.6，因为npm7.xx版本在后面开发时安装模块会出现很多问题，导致不能安装，所以最好安装6.xx版本的npm，电脑用户文件夹最好为英文，否则以后运行项目时会找不到模块的路径，因为系统识别不了中文路径</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%BD%BB%E5%BA%95%E5%8D%B8%E8%BD%BD%E6%95%99%E7%A8%8B%EF%BC%9A%E5%9B%A0%E4%B8%BA%E5%90%84%E7%A7%8D%E6%83%85%E5%86%B5%E6%83%B3%E8%A6%81%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85node%E6%97%B6%E9%9C%80%E8%A6%81%E5%B0%86%E5%8E%9F%E6%9D%A5%E7%9A%84node%E5%85%A8%E9%83%A8%E5%8D%B8%E8%BD%BD%EF%BC%8C%E5%8D%B8%E8%BD%BD%E4%B8%8D%E5%B9%B2%E5%87%80%E4%BC%9A%E5%AF%BC%E8%87%B4%E5%90%8E%E7%BB%ADnode%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8%E5%87%BA%E7%8E%B0%E5%90%84%E7%A7%8D%E9%94%99%E8%AF%AF"><span class="toc-number">1.2.</span> <span class="toc-text">2. 彻底卸载教程：因为各种情况想要重新安装node时需要将原来的node全部卸载，卸载不干净会导致后续node的安装和使用出现各种错误</span></a></li></ol></li></ol>
+      </li>
+    </ul>
+  </div>
+
+
+
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
+        
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+          <a href="#comment-tab1" class="mdui-ripple">livere</a>
+        
+      </div>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+        <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="lv-container" data-id="city" data-uid="">
+  <script type="text/javascript">
+    (function (d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
+</div>
+        </div>
+      
+    </div>
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2015 - 2021 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        zys
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>Total Visitors <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>Total Views <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
+    
+<script src="/js/mdui.min.v1.0.0.js"></script>
+
+
+
+
+<script src="/js/meadow.js"></script>
+
+</body>
+</html >
